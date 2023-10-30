@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wika - Project</title>
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav>
+      <div class="nav_container">
+        <div class="nav_container1">
+          <a href="/">
+            <img src="./assets/img/logo.svg" alt="logo" />
+          </a>
+          <a href="#" class="nav_link">Beranda KM</a>
+          <a href="#" class="nav_link">Hot News</a>
+          <a href="#" class="nav_link">KM Maps</a>
+          <a href="#" class="nav_link">Knowledge Sharing</a>
+          <a href="#" class="nav_link">Prosedur</a>
+          <a href="#" class="nav_link">Libarary</a>
+          <a href="#" class="nav_link">Data Center</a>
+        </div>
+        <div class="nav_container2">
+          <div class="nav_icons">
+            <img src="./assets/icons/icon-search.svg" alt="search" />
+          </div>
+          <div class="nav_icons">
+            <img
+              src="./assets/icons/ri_notification-3-line.svg"
+              alt="notification"
+            />
+          </div>
+          <div class="nav_icons">
+            <img src="./assets/icons/icon-article.svg" alt="article" />
+          </div>
+          <div class="nav_toggle" onclick="navToggle()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <a href="/"
+            ><img src="./assets/img/avatar.svg" alt="avatar" class="nav_avatar"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Overlay Mobile Start  -->
+    <div class="overlay">
+      <div class="overlay_container1">
+        <div class="overlay_icons">
+          <img src="./assets/icons/icon-search.svg" alt="search" />
+        </div>
+        <div class="overlay_icons">
+          <img
+            src="./assets/icons/ri_notification-3-line.svg"
+            alt="notification"
+          />
+        </div>
+        <div class="overlay_icons">
+          <img src="./assets/icons/icon-article.svg" alt="article" />
+        </div>
+        <div class="nav_toggle" onclick="navToggle()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="overlay_container2">
+        <a href="#" class="overlay_link">Beranda KM</a>
+        <a href="#" class="overlay_link">Hot News</a>
+        <a href="#" class="overlay_link">KM Maps</a>
+        <a href="#" class="overlay_link">Knowledge Sharing</a>
+        <a href="#" class="overlay_link">Prosedur</a>
+        <a href="#" class="overlay_link">Libarary</a>
+        <a href="#" class="overlay_link">Data Center</a>
+      </div>
+    </div>
+
+    <!-- Head Profile -->
+    <section class="headProfile">
+      <div class="headProfile_card">
+        <img
+          src="./assets/img/background-avatar.svg"
+          alt="background"
+          class="background_avatar"
+        />
+        <div class="headProfile_container1">
+          <div class="headProfile_containerSub1">
+            <img src="./assets/icons/trophy.svg" alt="trophy" />
+            <div class="avatar_detail">
+              <h2 class="avatar_detailTitle">Eleanor Pena</h2>
+              <p class="avatar_detailDesc">Top 3 Creator</p>
+            </div>
+          </div>
+          <div class="headProfile_containerSub2">
+            <div class="avatar_post">
+              <img src="./assets/icons/post.svg" alt="post" />
+              <div class="avatar_postContainer">
+                <h2 class="avatar_postTitle">20</h2>
+                <p class="avatar_postDesc">post</p>
+              </div>
+            </div>
+            <div class="avatar_thread">
+              <img src="./assets/icons/thread.svg" alt="post" />
+              <div class="avatar_threadContainer">
+                <h2 class="avatar_threadTitle">100</h2>
+                <p class="avatar_threadDesc">thread</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/img/avatar.svg"
+          alt="avatar"
+          class="avatar_profile"
+        />
+        <button class="edit_profile">
+          <img src="./assets/icons/icon-setting.svg" alt="edit" />
+          <h2 class="edit_profileTitle">Edit Profile</h2>
+        </button>
+      </div>
+    </section>
+
+    <!-- Content Profile -->
+    <section class="contentProfile">
+      <div class="contentProfileGrid">
+        <div class="contentProfileGrid1">
+          <!-- Profile Followers Start -->
+          <div class="profile_follow">
+            <div class="profile_follow1">
+              <h2 class="profile_follow1Title">20</h2>
+              <p class="profile_follow1Desc">Mengikuti</p>
+            </div>
+            <div class="profile_follow2">
+              <h2 class="profile_follow2Title">100</h2>
+              <p class="profile_follow2Desc">Pengikut</p>
+            </div>
+          </div>
+          <!-- Profile Followers End -->
+
+          <!-- Profile Menu Start -->
+          <div class="profile_menu">
+            <a href="#" class="profile_menuLink">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 22H18V20C18 19.2044 17.6839 18.4413 17.1213 17.8787C16.5587 17.3161 15.7956 17 15 17H9C8.20435 17 7.44129 17.3161 6.87868 17.8787C6.31607 18.4413 6 19.2044 6 20V22H4V20C4 18.6739 4.52678 17.4021 5.46447 16.4645C6.40215 15.5268 7.67392 15 9 15H15C16.3261 15 17.5979 15.5268 18.5355 16.4645C19.4732 17.4021 20 18.6739 20 20V22ZM12 13C11.2121 13 10.4319 12.8448 9.7039 12.5433C8.97595 12.2417 8.31451 11.7998 7.75736 11.2426C7.20021 10.6855 6.75825 10.0241 6.45672 9.2961C6.15519 8.56815 6 7.78793 6 7C6 6.21207 6.15519 5.43185 6.45672 4.7039C6.75825 3.97595 7.20021 3.31451 7.75736 2.75736C8.31451 2.20021 8.97595 1.75825 9.7039 1.45672C10.4319 1.15519 11.2121 1 12 1C13.5913 1 15.1174 1.63214 16.2426 2.75736C17.3679 3.88258 18 5.4087 18 7C18 8.5913 17.3679 10.1174 16.2426 11.2426C15.1174 12.3679 13.5913 13 12 13ZM12 11C13.0609 11 14.0783 10.5786 14.8284 9.82843C15.5786 9.07828 16 8.06087 16 7C16 5.93913 15.5786 4.92172 14.8284 4.17157C14.0783 3.42143 13.0609 3 12 3C10.9391 3 9.92172 3.42143 9.17157 4.17157C8.42143 4.92172 8 5.93913 8 7C8 8.06087 8.42143 9.07828 9.17157 9.82843C9.92172 10.5786 10.9391 11 12 11Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <h3 class="profile_menuLinkTitle">Profile</h3>
+            </a>
+            <a href="#" class="profile_menuLink">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14 2C15.8299 1.99913 17.6049 2.62567 19.0288 3.77513C20.4527 4.92458 21.4395 6.52748 21.8246 8.31647C22.2097 10.1055 21.9699 11.9724 21.145 13.6059C20.3202 15.2395 18.9602 16.5408 17.292 17.293C16.7587 18.4719 15.9475 19.5039 14.9278 20.3004C13.9082 21.097 12.7105 21.6343 11.4376 21.8663C10.1647 22.0984 8.85446 22.0182 7.61933 21.6327C6.3842 21.2472 5.261 20.5678 4.34608 19.6529C3.43115 18.738 2.7518 17.6148 2.36628 16.3796C1.98076 15.1445 1.90058 13.8343 2.13262 12.5614C2.36466 11.2884 2.90199 10.0908 3.69854 9.07114C4.49508 8.05148 5.52705 7.24024 6.70596 6.707C7.34011 5.30389 8.36555 4.1135 9.65931 3.27861C10.9531 2.44371 12.4602 1.99976 14 2ZM9.99996 8C9.21203 8 8.43182 8.1552 7.70386 8.45672C6.97591 8.75825 6.31447 9.20021 5.75732 9.75736C5.20017 10.3145 4.75822 10.9759 4.45669 11.7039C4.15516 12.4319 3.99996 13.2121 3.99996 14C3.99996 14.7879 4.15516 15.5681 4.45669 16.2961C4.75822 17.0241 5.20017 17.6855 5.75732 18.2426C6.31447 18.7998 6.97591 19.2417 7.70386 19.5433C8.43182 19.8448 9.21203 20 9.99996 20C11.5913 20 13.1174 19.3679 14.2426 18.2426C15.3678 17.1174 16 15.5913 16 14C16 12.4087 15.3678 10.8826 14.2426 9.75736C13.1174 8.63214 11.5913 8 9.99996 8ZM14 4C13.1526 3.99901 12.3148 4.17794 11.5418 4.52496C10.7688 4.87198 10.0783 5.37918 9.51596 6.013C10.6462 5.94439 11.7782 6.1165 12.837 6.51795C13.8958 6.9194 14.8573 7.54105 15.6579 8.34178C16.4586 9.14252 17.0801 10.1041 17.4814 11.1629C17.8827 12.2218 18.0547 13.3537 17.986 14.484C18.8952 13.6756 19.5372 12.6099 19.8268 11.4283C20.1164 10.2467 20.04 9.00492 19.6076 7.86772C19.1752 6.73053 18.4074 5.75164 17.4059 5.06088C16.4044 4.37013 15.2166 4.00014 14 4Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M9.10369 14.3529V12.8543H9.96134C10.0879 12.8543 10.2097 12.8637 10.3269 12.8824C10.4441 12.901 10.5472 12.9384 10.6362 12.9944C10.7252 13.0458 10.7955 13.1204 10.8471 13.2185C10.9033 13.3165 10.9315 13.4449 10.9315 13.6036C10.9315 13.7624 10.9033 13.8908 10.8471 13.9888C10.7955 14.0868 10.7252 14.1639 10.6362 14.2199C10.5472 14.2712 10.4441 14.3063 10.3269 14.3249C10.2097 14.3436 10.0879 14.3529 9.96134 14.3529H9.10369ZM8 12V17H9.10369V15.2073H10.2636C10.5776 15.2073 10.8448 15.1629 11.065 15.0742C11.2853 14.9809 11.4634 14.8595 11.5993 14.7101C11.7399 14.5607 11.8407 14.3903 11.9016 14.1989C11.9672 14.0028 12 13.8044 12 13.6036C12 13.3982 11.9672 13.1998 11.9016 13.0084C11.8407 12.817 11.7399 12.6466 11.5993 12.4972C11.4634 12.3478 11.2853 12.2288 11.065 12.1401C10.8448 12.0467 10.5776 12 10.2636 12H8Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <h3 class="profile_menuLinkTitle">My Points</h3>
+              <div class="points">
+                <h3 class="pointsTitle">1.543</h3>
+              </div>
+            </a>
+            <a href="#" class="profile_menuLink">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 9.5V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V9.5C21.337 9.5 20.7011 9.76339 20.2322 10.2322C19.7634 10.7011 19.5 11.337 19.5 12C19.5 12.663 19.7634 13.2989 20.2322 13.7678C20.7011 14.2366 21.337 14.5 22 14.5V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V14.5C2.66304 14.5 3.29893 14.2366 3.76777 13.7678C4.23661 13.2989 4.5 12.663 4.5 12C4.5 11.337 4.23661 10.7011 3.76777 10.2322C3.29893 9.76339 2.66304 9.5 2 9.5ZM14 5H4V7.968C4.75121 8.3403 5.38347 8.91505 5.8255 9.62746C6.26754 10.3399 6.50176 11.1616 6.50176 12C6.50176 12.8384 6.26754 13.6601 5.8255 14.3725C5.38347 15.085 4.75121 15.6597 4 16.032V19H14V5ZM16 5V19H20V16.032C19.2488 15.6597 18.6165 15.085 18.1745 14.3725C17.7325 13.6601 17.4982 12.8384 17.4982 12C17.4982 11.1616 17.7325 10.3399 18.1745 9.62746C18.6165 8.91505 19.2488 8.3403 20 7.968V5H16Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <h3 class="profile_menuLinkTitle">My Vouchers</h3>
+            </a>
+            <a href="#" class="profile_menuLink">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.2002 7.00012H18.8102C18.93 6.68004 18.9943 6.34184 19.0002 6.00012C18.9792 5.1867 18.6372 4.41464 18.0489 3.85254C17.4606 3.29045 16.6737 2.984 15.8602 3.00012C15.0607 3.01738 14.2806 3.24927 13.6015 3.6715C12.9224 4.09373 12.3694 4.69078 12.0002 5.40012C11.631 4.69078 11.078 4.09373 10.3989 3.6715C9.71979 3.24927 8.93967 3.01738 8.1402 3.00012C7.32668 2.984 6.53983 3.29045 5.9515 3.85254C5.36318 4.41464 5.02118 5.1867 5.0002 6.00012C5.00611 6.34184 5.07037 6.68004 5.1902 7.00012H4.8002C4.53706 7.0251 4.28148 7.102 4.04824 7.22637C3.815 7.35074 3.60873 7.52011 3.44134 7.72469C3.27396 7.92926 3.14879 8.16499 3.07307 8.41824C2.99735 8.67149 2.97259 8.93724 3.0002 9.20012V12.8001C2.95349 13.2844 3.07798 13.7696 3.35204 14.1716C3.62609 14.5735 4.03237 14.8667 4.5002 15.0001V19.3701C4.53107 19.8237 4.73725 20.2475 5.07508 20.5517C5.41291 20.8559 5.85588 21.0168 6.3102 21.0001H17.6902C18.1511 21.0164 18.5997 20.8501 18.9387 20.5374C19.2776 20.2247 19.4794 19.7908 19.5002 19.3301V15.0001C19.968 14.8667 20.3743 14.5735 20.6484 14.1716C20.9224 13.7696 21.0469 13.2844 21.0002 12.8001V9.20012C21.0278 8.93724 21.0031 8.67149 20.9273 8.41824C20.8516 8.16499 20.7264 7.92926 20.5591 7.72469C20.3917 7.52011 20.1854 7.35074 19.9522 7.22637C19.7189 7.102 19.4633 7.0251 19.2002 7.00012ZM19.0002 9.20012V12.8001C19.0122 12.8662 19.0122 12.934 19.0002 13.0001H13.0002V9.00012H19.0002C19.0122 9.06624 19.0122 9.13399 19.0002 9.20012ZM15.8602 5.00012C16.1435 4.98361 16.4219 5.07926 16.6352 5.26639C16.8486 5.45352 16.9797 5.71709 17.0002 6.00012C16.9797 6.28314 16.8486 6.54672 16.6352 6.73385C16.4219 6.92098 16.1435 7.01663 15.8602 7.00012H13.4002C13.5752 6.46589 13.9001 5.99327 14.3363 5.63865C14.7725 5.28403 15.3015 5.06237 15.8602 5.00012ZM7.0002 6.00012C7.02074 5.71709 7.15185 5.45352 7.36518 5.26639C7.57851 5.07926 7.85691 4.98361 8.1402 5.00012C8.69712 5.06418 9.22396 5.28666 9.65823 5.64116C10.0925 5.99567 10.4159 6.4673 10.5902 7.00012H8.1402C7.85691 7.01663 7.57851 6.92098 7.36518 6.73385C7.15185 6.54672 7.02074 6.28314 7.0002 6.00012ZM5.0002 9.20012C4.9882 9.13399 4.9882 9.06624 5.0002 9.00012H11.0002V13.0001H5.0002C4.9882 12.934 4.9882 12.8662 5.0002 12.8001V9.20012ZM6.5002 15.0001H11.0002V19.0001H6.5002V15.0001ZM13.0002 19.0001V15.0001H17.5002V19.0001H13.0002Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <h3 class="profile_menuLinkTitle">Reedem Points</h3>
+            </a>
+          </div>
+          <!-- Profile Menu End -->
+
+          <div class="profile_link"></div>
+        </div>
+        <div class="contentProfileGrid2">
+          <div class="post">
+            <h2 class="postTitle">Posting Ceritamu</h2>
+            <p class="postDesc">
+              Tuang inspirasimu ke dalam tulisan atau bikin podcast
+            </p>
+            <button class="postButton">
+              <svg
+                class="postButtonIcons"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.276 10.6669L11.0373 3.90555L10.0947 2.96288L3.33333 9.72422V10.6669H4.276ZM4.82867 12.0002H2V9.17155L9.62333 1.54822C9.74835 1.42324 9.91789 1.35303 10.0947 1.35303C10.2714 1.35303 10.441 1.42324 10.566 1.54822L12.452 3.43422C12.577 3.55924 12.6472 3.72878 12.6472 3.90555C12.6472 4.08233 12.577 4.25187 12.452 4.37689L4.82867 12.0002ZM2 13.3336H14V14.6669H2V13.3336Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <h3 class="postButtonTitle">Mulai Bercerita</h3>
+            </button>
+            <img src="./assets/img/draw.svg" alt="vector" class="draw" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Profile Menu End -->
+
+    <!-- Footer Start -->
+    <footer class="footer"></footer>
+    <!-- Footer End -->
+
+    <script src="./js/style.js"></script>
+  </body>
+</html>
