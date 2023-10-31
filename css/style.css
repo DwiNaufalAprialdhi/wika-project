@@ -128,71 +128,250 @@
         @apply grid grid-cols-12;
     }
 
-    .contentProfileGrid1 {
-        @apply lg:w-[288px] md:w-[270px] w-full lg:col-span-4 md:col-span-6 mr-6 col-span-12;
-    }
+        /* Grid 1 Class */
+        .contentProfileGrid1 {
+            @apply lg:w-[288px] md:w-[270px] w-full lg:col-span-4 md:col-span-6 mr-6 col-span-12;
+        }
     
+            /* Profile Follower Class */
+            .profile_follow {
+                @apply flex gap-3 items-center w-full pb-6 md:justify-start justify-center;
+            }
+            .profile_follow1 {
+                @apply py-4 px-[38px] bg-semantic_information3 rounded-2xl flex flex-col gap-1;
+            }
+            .profile_follow1Title {
+                @apply text-lg font-bold leading-7 text-semantic_information1 text-center;
+            }
+            .profile_follow1Desc {
+                @apply text-sm font-normal leading-5 text-semantic_information1;
+            }
+            .profile_follow2 {
+                @apply py-4 px-[38px] bg-accet3 rounded-2xl flex flex-col gap-1;
+            }
+            .profile_follow2Title {
+                @apply text-lg font-bold leading-7 text-accet1 text-center;
+            }
+            .profile_follow2Desc {
+                @apply text-sm font-normal leading-5 text-accet1;
+            }
 
-    .profile_follow {
-        @apply flex gap-3 items-center w-full pb-6 md:justify-start justify-center;
-    }
-    .profile_follow1 {
-        @apply py-4 px-[38px] bg-semantic_information3 rounded-2xl flex flex-col gap-1;
-    }
-    .profile_follow1Title {
-        @apply text-lg font-bold leading-7 text-semantic_information1 text-center;
-    }
-    .profile_follow1Desc {
-        @apply text-sm font-normal leading-5 text-semantic_information1;
-    }
-    .profile_follow2 {
-        @apply py-4 px-[38px] bg-accet3 rounded-2xl flex flex-col gap-1;
-    }
-    .profile_follow2Title {
-        @apply text-lg font-bold leading-7 text-accet1 text-center;
-    }
-    .profile_follow2Desc {
-        @apply text-sm font-normal leading-5 text-accet1;
-    }
+            /* Profile Menu Link Class */
+            .profile_menu {
+                @apply w-full flex flex-col;
+            }
+            .profile_menuLink {
+                @apply py-2 px-6 flex items-center gap-[14px] text-primary1 hover:bg-primary1 hover:text-white hover:rounded-2xl;
+            }
+            .profile_menuLinkTitle {
+                @apply text-sm font-medium leading-6;
+            }
+            .points {
+                @apply bg-semantic_success3 py-2 px-[9px] rounded-full;
+            }
+            .pointsTitle {
+                @apply text-semantic_success1 text-sm font-bold leading-5;
+            }
 
-    .profile_menu {
-        @apply w-full flex flex-col;
-    }
-    .profile_menuLink {
-        @apply py-2 px-6 flex items-center gap-[14px] text-primary1 hover:bg-primary1 hover:text-white hover:rounded-2xl;
-    }
-    .profile_menuLinkTitle {
-        @apply text-sm font-medium leading-6;
-    }
-    .points {
-        @apply bg-semantic_success3 py-2 px-[9px] rounded-full;
-    }
-    .pointsTitle {
-        @apply text-semantic_success1 text-sm font-bold leading-5;
-    }
+            /* Daily Task Class */
+            .daily {
+                @apply w-full pt-10;
+            }
+            .dailyTitle {
+                @apply text-lg font-bold leading-7 pb-4;
+            }
+            .dailyCard {
+                @apply w-full p-6 bg-neutral_white rounded-2xl shadow-lg flex flex-col gap-5;
+            }
+            .dailyCardChild {
+                @apply flex items-center justify-between;
+            }
+            .dailyCardChildLeft {
+                @apply flex flex-col gap-[6px];
+            }
+            .dailyCardChildRight {
+                @apply bg-semantic_success1 rounded-full p-[7px] text-white;
+            }
+            .dailyCardChildLeft_title {
+                @apply text-sm font-bold leading-4;
+            }
+            .dailyCardChildLeft_desc {
+                @apply text-xs font-normal leading-4 text-neutral_gray1;
+            }
 
-    .contentProfileGrid2 {
-        @apply w-full lg:col-span-8 md:col-span-6 h-32 lg:ml-[30px] md:ml-0 col-span-12 md:pt-0 pt-4;
-    }
+            /* Topic Class */
+            .topic {
+                @apply w-full flex flex-col gap-4 pt-10;
+            }
+            .topicTitle{
+                @apply text-lg font-bold leading-7;
+            }
+            .topicCard {
+                @apply relative overflow-hidden rounded-2xl shadow-inner;
+            }
+            .topicCard_img {
+                @apply w-full h-auto object-cover brightness-50;
+            }
+            .topicCard_title {
+                @apply absolute left-4 bottom-4 text-lg text-neutral_white font-bold leading-7 shadow-lg;
+            }
 
-    .post {
-        @apply w-full relative rounded-2xl py-8 px-10 bg-gradient-to-r from-[#0084F4] to-[#04A1FA] text-white overflow-hidden;
-    }
-    .postTitle {
-        @apply text-2xl font-bold leading-8 pb-2;
-    }
-    .postDesc {
-        @apply text-xs font-normal leading-5 pb-5;
-    }
-    .postButton {
-        @apply bg-accet1 rounded-2xl py-2 px-12 text-center flex gap-2 items-center hover:scale-105 duration-300 lg:self-start md:self-center self-center;
-    }
-    .postButtonIcons {
-        @apply text-white z-10;
-    }
-    .draw {
-        @apply absolute right-0 top-0 w-[334px] object-cover hidden lg:block;
-    }
+
+        /* Grid 2 Class */
+        .contentProfileGrid2 {
+            @apply w-full lg:col-span-8 md:col-span-6 h-32 lg:ml-[30px] md:ml-0 col-span-12 md:pt-0 pt-4;
+        }
+
+            /* Post Class */
+            .post {
+                @apply w-full relative rounded-2xl py-8 px-10 bg-gradient-to-r from-[#0084F4] to-[#04A1FA] text-white overflow-hidden;
+            }
+            .postTitle {
+                @apply text-2xl font-bold leading-8 pb-2;
+            }
+            .postDesc {
+                @apply text-xs font-normal leading-5 pb-5;
+            }
+            .postButton {
+                @apply bg-accet1 rounded-2xl py-2 px-12 text-center flex gap-2 items-center hover:scale-105 duration-300 lg:self-start md:self-center self-center;
+            }
+            .postButtonTitle {
+                @apply text-base font-bold leading-6;
+            }
+            .postButtonIcons {
+                @apply text-white z-10;
+            }
+            .draw {
+                @apply absolute right-0 top-0 w-[334px] object-cover hidden lg:block;
+            }
+
+            /* Activity Class */
+            .activity {
+                @apply w-full flex flex-col gap-8 pt-12;
+            }
+            .activityFiture{
+                @apply flex items-center gap-6;
+            }
+            .activityTitle {
+                @apply text-lg font-bold leading-7;
+            }
+            .dropdown {
+                @apply flex items-center gap-6 bg-neutral_white rounded-full py-2 px-[14px] shadow-md cursor-pointer relative;
+            }
+            .dropdownTitle {
+                @apply text-sm font-normal leading-5;
+            }
+            .dropdownMenu {
+                @apply absolute z-10 -bottom-36 -right-10 bg-neutral_white p-4 rounded-2xl w-40 shadow-lg hidden flex-col gap-4 duration-300;
+            }
+            .dropdownMenu_Link {
+                @apply text-sm font-normal leading-5 hover:bg-neutral_gray2 hover:rounded-2xl px-4;
+            }
+
+            /* card 1 */
+            .activityCard {
+                @apply p-6 w-full rounded-2xl border-b-4 border-semantic_success1 bg-neutral_white shadow-lg;
+            }
+            .activityCardHead {
+                @apply flex items-center justify-between w-full;
+            }
+            .activityCardBody {
+                @apply p-4 bg-neutral_gray3 rounded-lg mt-6;
+            }
+            .activityCardHeadLeft {
+                @apply flex items-center gap-4;
+            }
+            .activityCardIcons {
+                @apply p-2 bg-semantic_success1 text-neutral_white rounded-full;
+            }
+            .activityCardText {
+                @apply flex flex-col gap-1;
+            }
+            .activityCardTitle {
+                @apply text-neutral_black2 text-sm font-normal leading-5;
+            }
+            .activityCardTitleSpan {
+                @apply text-accet1 text-sm font-bold leading-4;
+            }
+            .activityCardDate {
+                @apply text-neutral_gray1 text-xs font-normal leading-4;
+            }
+            .activityCardBodyTitle {
+                @apply text-base text-neutral_black2 font-normal leading-7;
+            }
+
+            /* card 2 */
+            .activityCard2 {
+                @apply p-6 w-full rounded-2xl border-b-4 border-secondary1 bg-neutral_white shadow-lg;
+            }
+            .activityCardHead2 {
+                @apply flex items-center justify-between w-full;
+            }
+            .activityCardBody2 {
+                @apply p-4 bg-neutral_gray3 rounded-lg mt-6;
+            }
+            .activityCardHeadLeft2 {
+                @apply flex items-center gap-4;
+            }
+            .activityCardIcons2 {
+                @apply p-2 bg-secondary1 text-neutral_white rounded-full;
+            }
+            .activityCardText2 {
+                @apply flex flex-col gap-1;
+            }
+            .activityCardTitle2 {
+                @apply text-neutral_black2 text-sm font-normal leading-5;
+            }
+            .activityCardTitleSpan2 {
+                @apply text-accet1 text-sm font-bold leading-4;
+            }
+            .activityCardDate2 {
+                @apply text-neutral_gray1 text-xs font-normal leading-4;
+            }
+            .activityCardBodyTitle2 {
+                @apply text-base text-neutral_black2 font-normal leading-7;
+            }
+
+             /* card 3 */
+             .activityCard3 {
+                @apply p-6 w-full rounded-2xl border-b-4 border-primary1 bg-neutral_white shadow-lg;
+            }
+            .activityCardHead3 {
+                @apply flex items-center justify-between w-full;
+            }
+            .activityCardBody3 {
+                @apply p-4 rounded-lg mt-6 lg:flex lg:flex-row md:flex md:flex-col sm:flex-col flex-col lg:items-center md:items-start md:justify-start sm:justify-center justify-center lg:gap-4 md:gap-5 gap-8;
+            }
+            .activityCardHeadLeft3 {
+                @apply flex items-center gap-4;
+            }
+            .activityCardIcons3 {
+                @apply p-2 bg-primary1 text-neutral_white rounded-full;
+            }
+            .activityCardText3 {
+                @apply flex flex-col gap-1;
+            }
+            .activityCardImg{
+                @apply block w-[297px] h-[134px] object-cover scale-105 rounded-2xl;
+            }
+            .activityCardBodyRight3 {
+                @apply flex flex-col gap-2 lg:mt-0 md:mt-1 mt-5;
+            }
+            .activityCardBodySubject3 {
+                @apply text-base font-bold leading-6;
+            }
+            .activityCardTitle3 {
+                @apply text-neutral_black2 text-sm font-normal leading-5;
+            }
+            .activityCardTitleSpan3 {
+                @apply text-accet1 text-sm font-bold leading-4;
+            }
+            .activityCardDate3 {
+                @apply text-neutral_gray1 text-xs font-normal leading-4;
+            }
+            .activityCardBodyTitle3 {
+                @apply text-base text-neutral_black2 font-normal leading-7;
+            }
 
     /* Footer Class */
     .footer {

@@ -232,11 +232,122 @@
               <h3 class="profile_menuLinkTitle">Reedem Points</h3>
             </a>
           </div>
-          <!-- Profile Menu End -->
 
-          <div class="profile_link"></div>
+          <!-- Daily Start -->
+          <div class="daily">
+            <h2 class="dailyTitle">Daily Task</h2>
+            <div class="dailyCard">
+              <div class="dailyCardChild">
+                <div class="dailyCardChildLeft">
+                  <h2 class="dailyCardChildLeft_title">Daily Checkin</h2>
+                  <p class="dailyCardChildLeft_desc">+5 poin</p>
+                </div>
+                <div class="dailyCardChildRight">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.39979 12.5375L15.7534 5.18311L16.8854 6.31431L8.39979 14.7999L3.30859 9.70871L4.43979 8.57751L8.39979 12.5375Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <hr />
+              <div class="dailyCardChild">
+                <div class="dailyCardChildLeft">
+                  <h2 class="dailyCardChildLeft_title">Posting Cerita</h2>
+                  <p class="dailyCardChildLeft_desc">+10 poin</p>
+                </div>
+                <div class="dailyCardChildRight">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.39979 12.5375L15.7534 5.18311L16.8854 6.31431L8.39979 14.7999L3.30859 9.70871L4.43979 8.57751L8.39979 12.5375Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <hr />
+              <div class="dailyCardChild">
+                <div class="dailyCardChildLeft">
+                  <h2 class="dailyCardChildLeft_title">Beri Komentar</h2>
+                  <p class="dailyCardChildLeft_desc">+2 poin</p>
+                </div>
+                <h2 class="dailyCardChildRight_title">5/10</h2>
+              </div>
+              <div class="bg-semantic_success3 h-1 rounded-full">
+                <div
+                  class="bg-accet1 text-transparent h-1 rounded-full"
+                  style="width: 50%"
+                >
+                  50
+                </div>
+              </div>
+              <hr />
+              <div class="dailyCardChild">
+                <div class="dailyCardChildLeft">
+                  <h2 class="dailyCardChildLeft_title">Bagikan Thread</h2>
+                  <p class="dailyCardChildLeft_desc">+5 poin</p>
+                </div>
+                <h2 class="dailyCardChildRight_title">2/5</h2>
+              </div>
+              <div class="bg-semantic_success3 h-1 rounded-full">
+                <div
+                  class="bg-accet1 text-transparent h-1 rounded-full"
+                  style="width: 20%"
+                >
+                  50
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Daily End -->
+
+          <!-- Topic Start -->
+          <div class="topic">
+            <h2 class="topicTitle">Topik yang disukai</h2>
+            <div class="topicCard">
+              <img
+                src="./assets/img/otomotif.svg"
+                alt="otomotif"
+                class="topicCard_img"
+              />
+              <h2 class="topicCard_title">Otomotif</h2>
+            </div>
+            <div class="topicCard">
+              <img
+                src="./assets/img/korean.svg"
+                alt="korean"
+                class="topicCard_img"
+              />
+              <h2 class="topicCard_title">Korean</h2>
+            </div>
+            <div class="topicCard">
+              <img
+                src="./assets/img/gaming.svg"
+                alt="gaming"
+                class="topicCard_img"
+              />
+              <h2 class="topicCard_title">Gaming</h2>
+            </div>
+          </div>
+          <!-- Topic End -->
         </div>
+        <!-- Profile Menu End -->
+
         <div class="contentProfileGrid2">
+          <!-- Post Start -->
           <div class="post">
             <h2 class="postTitle">Posting Ceritamu</h2>
             <p class="postDesc">
@@ -260,10 +371,233 @@
             </button>
             <img src="./assets/img/draw.svg" alt="vector" class="draw" />
           </div>
+          <!-- Post End -->
+
+          <!-- Activity Start -->
+          <div class="activity">
+            <div class="activityFiture">
+              <h2 class="activityTitle">Activity</h2>
+              <div class="dropdown" onclick="dropdownToggle()">
+                <h2 class="dropdownTitle">Terbaru</h2>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.00005 9.99985L5.17139 7.17118L6.11472 6.22852L8.00005 8.11452L9.88539 6.22852L10.8287 7.17118L8.00005 9.99985Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <ul class="dropdownMenu">
+                  <li class="dropdownMenu_Link">Kemarin</li>
+                  <li class="dropdownMenu_Link">Minggu Lalu</li>
+                  <li class="dropdownMenu_Link">Bulan lalu</li>
+                </ul>
+              </div>
+            </div>
+            <div class="activityCard">
+              <div class="activityCardHead">
+                <div class="activityCardHeadLeft">
+                  <div class="activityCardIcons">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.29101 20.824L2.00001 22L3.17601 16.709C2.40154 15.2604 1.99754 13.6426 2.00001 12C2.00001 6.477 6.47701 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C10.3574 22.0025 8.73963 21.5985 7.29101 20.824ZM7.58101 18.711L8.23401 19.061C9.39256 19.6801 10.6864 20.0027 12 20C13.5823 20 15.129 19.5308 16.4446 18.6518C17.7602 17.7727 18.7855 16.5233 19.391 15.0615C19.9965 13.5997 20.155 11.9911 19.8463 10.4393C19.5376 8.88743 18.7757 7.46197 17.6569 6.34315C16.538 5.22433 15.1126 4.4624 13.5607 4.15372C12.0089 3.84504 10.4004 4.00346 8.93854 4.60896C7.47674 5.21447 6.22731 6.23984 5.34825 7.55544C4.4692 8.87103 4.00001 10.4177 4.00001 12C4.00001 13.334 4.32501 14.618 4.94001 15.766L5.28901 16.419L4.63401 19.366L7.58101 18.711Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="activityCardText">
+                    <h2 class="activityCardTitle">
+                      Membalas thread
+                      <span class="activityCardTitleSpan">Nam Heejin</span>
+                    </h2>
+                    <h3 class="activityCardDate">Hari ini 10:34</h3>
+                  </div>
+                </div>
+                <svg
+                  class="cursor-pointer"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+                    fill="#6F6F6F"
+                  />
+                </svg>
+              </div>
+              <div class="activityCardBody">
+                <p class="activityCardBodyTitle">
+                  Something has always existed. According to physics, there can
+                  never be true physical nothingness—though there can be times
+                  when existence resembles nothing,
+                </p>
+              </div>
+            </div>
+            <div class="activityCard2">
+              <div class="activityCardHead2">
+                <div class="activityCardHeadLeft2">
+                  <div class="activityCardIcons2">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11 20L1 12L11 4V9C16.523 9 21 13.477 21 19C21 19.273 20.99 19.543 20.968 19.81C20.2288 18.4054 19.1315 17.2211 17.7871 16.3773C16.4428 15.5335 14.8993 15.06 13.313 15.005L13 15H11V20ZM9 13H13.034L13.381 13.007C14.666 13.05 15.905 13.317 17.057 13.773C16.3066 12.9019 15.3769 12.2032 14.3315 11.7246C13.2861 11.246 12.1497 10.9988 11 11H9V8.161L4.202 12L9 15.839V13Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="activityCardText2">
+                    <h2 class="activityCardTitle2">
+                      Membalas post
+                      <span class="activityCardTitleSpan2">Tzuyu Twice</span>
+                    </h2>
+                    <h3 class="activityCardDate2">Kemarin 10:34</h3>
+                  </div>
+                </div>
+                <svg
+                  class="cursor-pointer"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+                    fill="#6F6F6F"
+                  />
+                </svg>
+              </div>
+              <div class="activityCardBody2">
+                <p class="activityCardBodyTitle2">
+                  Something has always existed. According to physics, there can
+                  never be true physical nothingness—though there can be times
+                  when existence resembles nothing,
+                </p>
+              </div>
+            </div>
+            <div class="activityCard3">
+              <div class="activityCardHead3">
+                <div class="activityCardHeadLeft3">
+                  <div class="activityCardIcons3">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.414 16.0001L16.556 5.85808L15.142 4.44408L5 14.5861V16.0001H6.414ZM7.243 18.0001H3V13.7571L14.435 2.32208C14.6225 2.13461 14.8768 2.0293 15.142 2.0293C15.4072 2.0293 15.6615 2.13461 15.849 2.32208L18.678 5.15108C18.8655 5.33861 18.9708 5.59292 18.9708 5.85808C18.9708 6.12325 18.8655 6.37756 18.678 6.56508L7.243 18.0001ZM3 20.0001H21V22.0001H3V20.0001Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <div class="activityCardText3">
+                    <h2 class="activityCardTitle3">Membuat thread</h2>
+                    <h3 class="activityCardDate3">Senin, 24 Juni 2021 13:32</h3>
+                  </div>
+                </div>
+                <svg
+                  class="cursor-pointer"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+                    fill="#6F6F6F"
+                  />
+                </svg>
+              </div>
+              <div class="activityCardBody3">
+                <img
+                  src="./assets/img/create_thread.svg"
+                  alt="thread"
+                  class="activityCardImg"
+                />
+                <div class="activityCardBodyRight3">
+                  <h2 class="activityCardBodySubject3">
+                    The More Important the Work, the More Important the Rest
+                  </h2>
+                  <p class="activityCardBodyTitle3">
+                    Something has always existed. According to physics, there
+                    can never be true physical nothingness—though there can be
+                    times when existence resembles nothing,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="activityCard">
+              <div class="activityCardHead">
+                <div class="activityCardHeadLeft">
+                  <div class="activityCardIcons">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.29101 20.824L2.00001 22L3.17601 16.709C2.40154 15.2604 1.99754 13.6426 2.00001 12C2.00001 6.477 6.47701 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C10.3574 22.0025 8.73963 21.5985 7.29101 20.824ZM7.58101 18.711L8.23401 19.061C9.39256 19.6801 10.6864 20.0027 12 20C13.5823 20 15.129 19.5308 16.4446 18.6518C17.7602 17.7727 18.7855 16.5233 19.391 15.0615C19.9965 13.5997 20.155 11.9911 19.8463 10.4393C19.5376 8.88743 18.7757 7.46197 17.6569 6.34315C16.538 5.22433 15.1126 4.4624 13.5607 4.15372C12.0089 3.84504 10.4004 4.00346 8.93854 4.60896C7.47674 5.21447 6.22731 6.23984 5.34825 7.55544C4.4692 8.87103 4.00001 10.4177 4.00001 12C4.00001 13.334 4.32501 14.618 4.94001 15.766L5.28901 16.419L4.63401 19.366L7.58101 18.711Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="activityCardText">
+                    <h2 class="activityCardTitle">
+                      Membalas thread
+                      <span class="activityCardTitleSpan">Jinsoul</span>
+                    </h2>
+                    <h3 class="activityCardDate">16 Juni 2021 08:02</h3>
+                  </div>
+                </div>
+                <svg
+                  class="cursor-pointer"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+                    fill="#6F6F6F"
+                  />
+                </svg>
+              </div>
+              <div class="activityCardBody">
+                <p class="activityCardBodyTitle">
+                  Something has always existed. According to physics, there can
+                  never be true physical nothingness—though there can be times
+                  when existence resembles nothing,
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Activity End -->
         </div>
       </div>
     </section>
-    <!-- Profile Menu End -->
 
     <!-- Footer Start -->
     <footer class="footer"></footer>
