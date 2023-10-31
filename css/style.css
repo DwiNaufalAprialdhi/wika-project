@@ -5,9 +5,11 @@
 @tailwind utilities;
 
 @layer base {
+    /* Body Class */
     body {
         @apply font-helvetica text-neutral_black1 bg-[#F8F8F8];
     }
+    /* Nav Class */
     nav {
         @apply fixed py-4 xl:px-[108px] lg:px-14 md:px-12 sm:px-4 px-4 mx-auto w-full bg-neutral_white z-30;
     }
@@ -122,7 +124,7 @@
 
     /* Content Profile Class */
     .contentProfile {
-        @apply w-full lg:pt-[120px] md:pt-10 pt-4 lg:px-[108px] md:px-12 sm:px-4 px-4 mx-auto;
+        @apply w-full lg:pt-[120px] md:pt-10 pt-4 lg:px-[108px] md:px-12 sm:px-4 px-4 mx-auto lg:pb-[0px] md:pb-[400px] sm:pb-[1550px] pb-[1900px];
     }
     .contentProfileGrid {
         @apply grid grid-cols-12;
@@ -262,7 +264,7 @@
                 @apply text-sm font-normal leading-5;
             }
             .dropdownMenu {
-                @apply absolute z-10 -bottom-36 -right-10 bg-neutral_white p-4 rounded-2xl w-40 shadow-lg hidden flex-col gap-4 duration-300;
+                @apply absolute z-10 -bottom-36 -right-10 bg-neutral_white p-4 rounded-2xl w-40 shadow-lg hidden flex-col gap-4 transition-all duration-300;
             }
             .dropdownMenu_Link {
                 @apply text-sm font-normal leading-5 hover:bg-neutral_gray2 hover:rounded-2xl px-4;
@@ -375,6 +377,71 @@
 
     /* Footer Class */
     .footer {
-        @apply pt-24;
+        @apply mt-20 pt-24 pb-6 xl:px-[108px] lg:px-14 md:px-12 sm:px-4 px-4 w-full mx-auto;
     }
+    .footerGrid {
+        @apply grid grid-cols-12 gap-6 w-full pt-[96px] pb-[70px];
+    }
+
+    .footerGrid1 {
+        @apply lg:col-span-4 md:col-span-6 sm:col-span-12 col-span-12 flex flex-col gap-6;
+    }
+        .footerGrid1Title {
+            @apply text-semantic_information1 text-lg font-normal leading-7;
+        }
+        .footerGrid1Desc {
+            @apply text-neutral_black2 text-sm font-normal leading-5 max-w-xs;
+        }
+        .footerGrid1Flex {
+            @apply flex gap-4 items-center;
+        }
+
+    .footerGrid2 {
+        @apply lg:col-span-2 md:col-span-6 sm:col-span-12 col-span-12 flex flex-col gap-6;
+    }
+        .footerGrid2Title {
+            @apply text-accet1 text-lg font-normal leading-7;
+        }
+        .footerGrid2Flex {
+            @apply flex flex-col gap-3;
+        }
+        .footerGrid2Link {
+            @apply text-sm font-normal leading-5 text-neutral_black2;
+        }
+
+    .footerGrid3 {
+        @apply lg:col-span-2 md:col-span-6 sm:col-span-12 col-span-12 flex flex-col gap-6;
+    }
+        .footerGrid3Title {
+            @apply text-semantic_success1 text-lg font-normal leading-7;
+        }
+        .footerGrid3Flex {
+            @apply flex flex-col gap-3;
+        }
+        .footerGrid3Link {
+            @apply text-sm font-normal leading-5 text-neutral_black2;
+        }
+
+    .footerGrid4 {
+        @apply lg:col-span-4 md:col-span-6 sm:col-span-12 col-span-12 flex flex-col gap-6;
+    }
+        .footerGrid4Title {
+            @apply text-semantic_error1 text-lg font-normal leading-7;
+        }
+        .footerGrid4Flex {
+            @apply flex flex-col gap-[14px];
+        }
+        .footerGrid4Flex2 {
+            @apply flex items-center gap-2;
+        }
+        .footerGrid4Link {
+            @apply text-sm font-normal leading-5 text-neutral_black2 max-w-[280px];
+        }
+
+    .copyright {
+        @apply w-full flex flex-row justify-between;
+    }
+        .copyrightTitle {
+            @apply text-sm font-normal leading-5 text-neutral_black2;
+        }
 }   
