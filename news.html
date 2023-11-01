@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.svg" />
+    <title>Wika - Project - Hot News</title>
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav>
+      <div class="nav_container">
+        <div class="nav_container1">
+          <a href="/">
+            <img src="./assets/img/logo.svg" alt="logo" />
+          </a>
+          <a href="#" class="nav_link">Beranda KM</a>
+          <a href="news.html" class="nav_link">Hot News</a>
+          <a href="#" class="nav_link">KM Maps</a>
+          <a href="#" class="nav_link">Knowledge Sharing</a>
+          <a href="#" class="nav_link">Prosedur</a>
+          <a href="#" class="nav_link">Libarary</a>
+          <a href="#" class="nav_link">Data Center</a>
+        </div>
+        <div class="nav_container2">
+          <div class="nav_icons">
+            <img src="./assets/icons/icon-search.svg" alt="search" />
+          </div>
+          <div class="nav_icons">
+            <img
+              src="./assets/icons/ri_notification-3-line.svg"
+              alt="notification"
+            />
+          </div>
+          <div class="nav_icons">
+            <img src="./assets/icons/icon-article.svg" alt="article" />
+          </div>
+          <div class="nav_toggle" onclick="navToggle()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <a href="/"
+            ><img src="./assets/img/avatar.svg" alt="avatar" class="nav_avatar"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Overlay Mobile Start  -->
+    <div class="overlay">
+      <div class="overlay_container1">
+        <div class="overlay_icons">
+          <img src="./assets/icons/icon-search.svg" alt="search" />
+        </div>
+        <div class="overlay_icons">
+          <img
+            src="./assets/icons/ri_notification-3-line.svg"
+            alt="notification"
+          />
+        </div>
+        <div class="overlay_icons">
+          <img src="./assets/icons/icon-article.svg" alt="article" />
+        </div>
+        <div class="nav_toggle" onclick="navToggle()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="overlay_container2">
+        <a href="#" class="overlay_link">Beranda KM</a>
+        <a href="news.html" class="overlay_link">Hot News</a>
+        <a href="#" class="overlay_link">KM Maps</a>
+        <a href="#" class="overlay_link">Knowledge Sharing</a>
+        <a href="#" class="overlay_link">Prosedur</a>
+        <a href="#" class="overlay_link">Libarary</a>
+        <a href="#" class="overlay_link">Data Center</a>
+      </div>
+    </div>
+
+    <!-- Hot Topics Start -->
+    <section class="hotTopic">
+      <div class="hotTopicHead">
+        <div class="hotTopicHead_left">
+          <img
+            src="./assets/img/hot-topics.svg"
+            alt="Hot Topics"
+            class="hotTopicHead_leftIcons"
+          />
+          <h2 class="hotTopicHead_leftTitle">Hot Topics</h2>
+        </div>
+        <button class="hotTopicHead_right">Lihat Semua</button>
+      </div>
+      <div class="hotTopicBody">
+        <div class="hotTopicCard">
+          <img
+            src="./assets/img/hot-topic-card-1.svg"
+            alt="topic1"
+            class="hotTopicCardImg"
+          />
+          <div class="hotTopicCardBody">
+            <h2 class="hotTopicCardBodyTitle">
+              The More Important the Work, the More Important the Rest
+            </h2>
+            <div class="hotTopicCardBodyAvatar">
+              <img
+                src="./assets/img/topic-avatar.svg"
+                alt="avatar"
+                class="hotTopicCardBodyImg"
+              />
+              <h2 class="hotTopicCardBodyName">by Eleanor Pena</h2>
+            </div>
+          </div>
+        </div>
+        <div class="hotTopicCard">
+          <img
+            src="./assets/img/hot-topic-card-2.svg"
+            alt="topic1"
+            class="hotTopicCardImg"
+          />
+          <div class="hotTopicCardBody">
+            <h2 class="hotTopicCardBodyTitle">Analysing Potential Problems</h2>
+            <div class="hotTopicCardBodyAvatar">
+              <img
+                src="./assets/img/topic-avatar2.svg"
+                alt="avatar"
+                class="hotTopicCardBodyImg"
+              />
+              <h2 class="hotTopicCardBodyName">by Jane Cooper</h2>
+            </div>
+          </div>
+        </div>
+        <div class="hotTopicCard">
+          <img
+            src="./assets/img/hot-topic-card-3.svg"
+            alt="topic1"
+            class="hotTopicCardImg"
+          />
+          <div class="hotTopicCardBody">
+            <h2 class="hotTopicCardBodyTitle">
+              Understanding color theory: the color wheel and finding comp...
+            </h2>
+            <div class="hotTopicCardBodyAvatar">
+              <img
+                src="./assets/img/topic-avatar3.svg"
+                alt="avatar"
+                class="hotTopicCardBodyImg"
+              />
+              <h2 class="hotTopicCardBodyName">by Brooklyn Simmons</h2>
+            </div>
+          </div>
+        </div>
+        <div class="hotTopicCard">
+          <img
+            src="./assets/img/hot-topic-card-4.svg"
+            alt="topic1"
+            class="hotTopicCardImg"
+          />
+          <div class="hotTopicCardBody">
+            <h2 class="hotTopicCardBodyTitle">
+              The Calm meditation app is getting its own celebrity
+            </h2>
+            <div class="hotTopicCardBodyAvatar">
+              <img
+                src="./assets/img/topic-avatar4.svg"
+                alt="avatar"
+                class="hotTopicCardBodyImg"
+              />
+              <h2 class="hotTopicCardBodyName">by John Kennedy</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hot Topics End -->
+
+    <!-- Content News Start -->
+    <section class="contentNews">
+      <div class="contentNews_grid1">
+        <!-- Hot Threads Start-->
+        <div class="thread">
+          <div class="threadFlex1">
+            <img
+              src="./assets/icons/hot-threads.svg"
+              alt="threads"
+              class="threadIcons"
+            />
+            <h2 class="threadTitle">Hot Threads</h2>
+          </div>
+          <div class="threadFlex2">
+            <!-- Hot Threads Card Start -->
+
+            <a href="newsDetail.html">
+              <div class="threadCard">
+                <div class="threadCard_head">
+                  <div class="threadCard_headLeft">
+                    <img src="./assets/img/topic-avatar.svg" alt="avatar" />
+                    <div class="threadCard_NameDate">
+                      <h2 class="threadCard_name">Eleanor Pena</h2>
+                      <p class="threadCard_date">Senin, 24 Juni 2021 13:32</p>
+                    </div>
+                  </div>
+                  <svg
+                    class="block cursor-pointer"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+                      fill="#6F6F6F"
+                    />
+                  </svg>
+                </div>
+                <div class="threadCard_body">
+                  <img
+                    src="./assets/img/hot-threads1.svg"
+                    alt="hot-threads"
+                    class="threadCard_bodyImg"
+                  />
+                  <div class="threadCard_bodyForm">
+                    <h2 class="threadCard_bodyTitle">Lifestyle</h2>
+                    <h3 class="threadCard_bodySubject">
+                      The More Important the Work, the More Important the Rest
+                    </h3>
+                    <p class="threadCard_bodyDesc">
+                      Something has always existed. According to physics, there
+                      can never be true physical nothingness—though there can be
+                      times when...
+                    </p>
+                    <div class="threadCard_bodyFiture">
+                      <div class="threadCard_bodyFitureLeft">
+                        <div class="threadCard_bodyFitureContent">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.86059 13.8828L1.33326 14.6668L2.11726 11.1395C1.60095 10.1738 1.33161 9.09526 1.33326 8.00016C1.33326 4.31816 4.31793 1.3335 7.99993 1.3335C11.6819 1.3335 14.6666 4.31816 14.6666 8.00016C14.6666 11.6822 11.6819 14.6668 7.99993 14.6668C6.90483 14.6685 5.82634 14.3991 4.86059 13.8828ZM5.05393 12.4742L5.48926 12.7075C6.26163 13.1203 7.12419 13.3353 7.99993 13.3335C9.05476 13.3335 10.0859 13.0207 10.963 12.4347C11.84 11.8486 12.5236 11.0157 12.9273 10.0411C13.331 9.0666 13.4366 7.99425 13.2308 6.95968C13.025 5.92512 12.517 4.97481 11.7712 4.22893C11.0253 3.48305 10.075 2.9751 9.04041 2.76931C8.00584 2.56352 6.93349 2.66914 5.95895 3.07281C4.98441 3.47647 4.15146 4.16006 3.56542 5.03712C2.97939 5.91418 2.66659 6.94533 2.66659 8.00016C2.66659 8.8895 2.88326 9.7455 3.29326 10.5108L3.52593 10.9462L3.08926 12.9108L5.05393 12.4742Z"
+                              fill="#6F6F6F"
+                            />
+                          </svg>
+                          <h2 class="threadCard_bodyFitureTitle">
+                            512 Komentar
+                          </h2>
+                        </div>
+                        <div class="threadCard_bodyFitureContent">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.9999 2C11.5946 2 14.5852 4.58667 15.2126 8C14.5859 11.4133 11.5946 14 7.9999 14C4.40523 14 1.41456 11.4133 0.787231 8C1.4139 4.58667 4.40523 2 7.9999 2ZM7.9999 12.6667C9.35954 12.6664 10.6788 12.2045 11.7418 11.3568C12.8048 10.509 13.5485 9.32552 13.8512 8C13.5474 6.67554 12.8032 5.49334 11.7403 4.64668C10.6774 3.80003 9.35877 3.33902 7.9999 3.33902C6.64103 3.33902 5.32236 3.80003 4.25948 4.64668C3.19661 5.49334 2.45241 6.67554 2.14856 8C2.4513 9.32552 3.19501 10.509 4.25799 11.3568C5.32097 12.2045 6.64025 12.6664 7.9999 12.6667ZM7.9999 11C7.20425 11 6.44119 10.6839 5.87858 10.1213C5.31597 9.55871 4.9999 8.79565 4.9999 8C4.9999 7.20435 5.31597 6.44129 5.87858 5.87868C6.44119 5.31607 7.20425 5 7.9999 5C8.79555 5 9.55861 5.31607 10.1212 5.87868C10.6838 6.44129 10.9999 7.20435 10.9999 8C10.9999 8.79565 10.6838 9.55871 10.1212 10.1213C9.55861 10.6839 8.79555 11 7.9999 11ZM7.9999 9.66667C8.44193 9.66667 8.86585 9.49107 9.17841 9.17851C9.49097 8.86595 9.66656 8.44203 9.66656 8C9.66656 7.55797 9.49097 7.13405 9.17841 6.82149C8.86585 6.50893 8.44193 6.33333 7.9999 6.33333C7.55787 6.33333 7.13395 6.50893 6.82139 6.82149C6.50883 7.13405 6.33323 7.55797 6.33323 8C6.33323 8.44203 6.50883 8.86595 6.82139 9.17851C7.13395 9.49107 7.55787 9.66667 7.9999 9.66667Z"
+                              fill="#6F6F6F"
+                            />
+                          </svg>
+                          <h2 class="threadCard_bodyFitureTitle">764 Views</h2>
+                        </div>
+                      </div>
+                      <div class="threadCard_bodyFitureContent">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.7466 11.3485L5.94727 9.82181C5.5818 10.2125 5.10726 10.4843 4.58532 10.6017C4.06337 10.7192 3.51817 10.677 3.02055 10.4805C2.52293 10.284 2.09591 9.94244 1.79498 9.50011C1.49405 9.05777 1.33313 8.53514 1.33313 8.00014C1.33313 7.46515 1.49405 6.94252 1.79498 6.50018C2.09591 6.05784 2.52293 5.71624 3.02055 5.51978C3.51817 5.32332 4.06337 5.28108 4.58532 5.39855C5.10726 5.51602 5.5818 5.78777 5.94727 6.17848L8.74727 4.65181C8.5883 4.02253 8.6643 3.35687 8.96102 2.77961C9.25774 2.20235 9.75481 1.75313 10.359 1.51614C10.9633 1.27916 11.6332 1.27068 12.2433 1.4923C12.8533 1.71392 13.3616 2.15042 13.6728 2.71998C13.984 3.28955 14.0769 3.95307 13.9339 4.58617C13.7909 5.21928 13.4219 5.7785 12.8961 6.15902C12.3703 6.53953 11.7237 6.71522 11.0777 6.65314C10.4316 6.59106 9.83034 6.29548 9.3866 5.82181L6.5866 7.34848C6.69407 7.77605 6.69407 8.22357 6.5866 8.65114L9.38593 10.1778C9.82967 9.70414 10.4309 9.40856 11.077 9.34648C11.7231 9.2844 12.3696 9.46009 12.8954 9.8406C13.4212 10.2211 13.7902 10.7803 13.9332 11.4134C14.0762 12.0466 13.9834 12.7101 13.6721 13.2796C13.3609 13.8492 12.8526 14.2857 12.2426 14.5073C11.6325 14.7289 10.9626 14.7205 10.3584 14.4835C9.75414 14.2465 9.25707 13.7973 8.96036 13.22C8.66364 12.6428 8.58764 11.9771 8.7466 11.3478V11.3485ZM3.99993 9.33314C4.35356 9.33314 4.69269 9.19267 4.94274 8.94262C5.19279 8.69257 5.33327 8.35343 5.33327 7.99981C5.33327 7.64619 5.19279 7.30705 4.94274 7.057C4.69269 6.80695 4.35356 6.66648 3.99993 6.66648C3.64631 6.66648 3.30717 6.80695 3.05712 7.057C2.80708 7.30705 2.6666 7.64619 2.6666 7.99981C2.6666 8.35343 2.80708 8.69257 3.05712 8.94262C3.30717 9.19267 3.64631 9.33314 3.99993 9.33314ZM11.3333 5.33314C11.6869 5.33314 12.026 5.19267 12.2761 4.94262C12.5261 4.69257 12.6666 4.35343 12.6666 3.99981C12.6666 3.64619 12.5261 3.30705 12.2761 3.057C12.026 2.80695 11.6869 2.66648 11.3333 2.66648C10.9796 2.66648 10.6405 2.80695 10.3905 3.057C10.1404 3.30705 9.99993 3.64619 9.99993 3.99981C9.99993 4.35343 10.1404 4.69257 10.3905 4.94262C10.6405 5.19267 10.9796 5.33314 11.3333 5.33314ZM11.3333 13.3331C11.6869 13.3331 12.026 13.1927 12.2761 12.9426C12.5261 12.6926 12.6666 12.3534 12.6666 11.9998C12.6666 11.6462 12.5261 11.307 12.2761 11.057C12.026 10.807 11.6869 10.6665 11.3333 10.6665C10.9796 10.6665 10.6405 10.807 10.3905 11.057C10.1404 11.307 9.99993 11.6462 9.99993 11.9998C9.99993 12.3534 10.1404 12.6926 10.3905 12.9426C10.6405 13.1927 10.9796 13.3331 11.3333 13.3331Z"
+                            fill="#6F6F6F"
+                          />
+                        </svg>
+                        <h2 class="threadCard_bodyFitureTitle">Bagikan</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="newsDetail.html">
+              <div class="threadCard">
+                <div class="threadCard_head">
+                  <div class="threadCard_headLeft">
+                    <img src="./assets/img/topic-avatar2.svg" alt="avatar" />
+                    <div class="threadCard_NameDate">
+                      <h2 class="threadCard_name">Jane Cooper</h2>
+                      <p class="threadCard_date">Kemarin 10:34</p>
+                    </div>
+                  </div>
+                  <svg
+                    class="block cursor-pointer"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+                      fill="#6F6F6F"
+                    />
+                  </svg>
+                </div>
+                <div class="threadCard_body">
+                  <img
+                    src="./assets/img/hot-threads2.svg"
+                    alt="hot-threads"
+                    class="threadCard_bodyImg"
+                  />
+                  <div class="threadCard_bodyForm">
+                    <h2 class="threadCard_bodyTitle">Technology</h2>
+                    <h3 class="threadCard_bodySubject">
+                      Vulnerable Leadership: The Power of Opening Up
+                    </h3>
+                    <p class="threadCard_bodyDesc">
+                      Consider that for a moment: everything we see around us is
+                      assumed to have had a cause and is contingent upon
+                      something else.
+                    </p>
+                    <div class="threadCard_bodyFiture">
+                      <div class="threadCard_bodyFitureLeft">
+                        <div class="threadCard_bodyFitureContent">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.86059 13.8828L1.33326 14.6668L2.11726 11.1395C1.60095 10.1738 1.33161 9.09526 1.33326 8.00016C1.33326 4.31816 4.31793 1.3335 7.99993 1.3335C11.6819 1.3335 14.6666 4.31816 14.6666 8.00016C14.6666 11.6822 11.6819 14.6668 7.99993 14.6668C6.90483 14.6685 5.82634 14.3991 4.86059 13.8828ZM5.05393 12.4742L5.48926 12.7075C6.26163 13.1203 7.12419 13.3353 7.99993 13.3335C9.05476 13.3335 10.0859 13.0207 10.963 12.4347C11.84 11.8486 12.5236 11.0157 12.9273 10.0411C13.331 9.0666 13.4366 7.99425 13.2308 6.95968C13.025 5.92512 12.517 4.97481 11.7712 4.22893C11.0253 3.48305 10.075 2.9751 9.04041 2.76931C8.00584 2.56352 6.93349 2.66914 5.95895 3.07281C4.98441 3.47647 4.15146 4.16006 3.56542 5.03712C2.97939 5.91418 2.66659 6.94533 2.66659 8.00016C2.66659 8.8895 2.88326 9.7455 3.29326 10.5108L3.52593 10.9462L3.08926 12.9108L5.05393 12.4742Z"
+                              fill="#6F6F6F"
+                            />
+                          </svg>
+                          <h2 class="threadCard_bodyFitureTitle">
+                            232 Komentar
+                          </h2>
+                        </div>
+                        <div class="threadCard_bodyFitureContent">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.9999 2C11.5946 2 14.5852 4.58667 15.2126 8C14.5859 11.4133 11.5946 14 7.9999 14C4.40523 14 1.41456 11.4133 0.787231 8C1.4139 4.58667 4.40523 2 7.9999 2ZM7.9999 12.6667C9.35954 12.6664 10.6788 12.2045 11.7418 11.3568C12.8048 10.509 13.5485 9.32552 13.8512 8C13.5474 6.67554 12.8032 5.49334 11.7403 4.64668C10.6774 3.80003 9.35877 3.33902 7.9999 3.33902C6.64103 3.33902 5.32236 3.80003 4.25948 4.64668C3.19661 5.49334 2.45241 6.67554 2.14856 8C2.4513 9.32552 3.19501 10.509 4.25799 11.3568C5.32097 12.2045 6.64025 12.6664 7.9999 12.6667ZM7.9999 11C7.20425 11 6.44119 10.6839 5.87858 10.1213C5.31597 9.55871 4.9999 8.79565 4.9999 8C4.9999 7.20435 5.31597 6.44129 5.87858 5.87868C6.44119 5.31607 7.20425 5 7.9999 5C8.79555 5 9.55861 5.31607 10.1212 5.87868C10.6838 6.44129 10.9999 7.20435 10.9999 8C10.9999 8.79565 10.6838 9.55871 10.1212 10.1213C9.55861 10.6839 8.79555 11 7.9999 11ZM7.9999 9.66667C8.44193 9.66667 8.86585 9.49107 9.17841 9.17851C9.49097 8.86595 9.66656 8.44203 9.66656 8C9.66656 7.55797 9.49097 7.13405 9.17841 6.82149C8.86585 6.50893 8.44193 6.33333 7.9999 6.33333C7.55787 6.33333 7.13395 6.50893 6.82139 6.82149C6.50883 7.13405 6.33323 7.55797 6.33323 8C6.33323 8.44203 6.50883 8.86595 6.82139 9.17851C7.13395 9.49107 7.55787 9.66667 7.9999 9.66667Z"
+                              fill="#6F6F6F"
+                            />
+                          </svg>
+                          <h2 class="threadCard_bodyFitureTitle">32 Views</h2>
+                        </div>
+                      </div>
+                      <div class="threadCard_bodyFitureContent">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.7466 11.3485L5.94727 9.82181C5.5818 10.2125 5.10726 10.4843 4.58532 10.6017C4.06337 10.7192 3.51817 10.677 3.02055 10.4805C2.52293 10.284 2.09591 9.94244 1.79498 9.50011C1.49405 9.05777 1.33313 8.53514 1.33313 8.00014C1.33313 7.46515 1.49405 6.94252 1.79498 6.50018C2.09591 6.05784 2.52293 5.71624 3.02055 5.51978C3.51817 5.32332 4.06337 5.28108 4.58532 5.39855C5.10726 5.51602 5.5818 5.78777 5.94727 6.17848L8.74727 4.65181C8.5883 4.02253 8.6643 3.35687 8.96102 2.77961C9.25774 2.20235 9.75481 1.75313 10.359 1.51614C10.9633 1.27916 11.6332 1.27068 12.2433 1.4923C12.8533 1.71392 13.3616 2.15042 13.6728 2.71998C13.984 3.28955 14.0769 3.95307 13.9339 4.58617C13.7909 5.21928 13.4219 5.7785 12.8961 6.15902C12.3703 6.53953 11.7237 6.71522 11.0777 6.65314C10.4316 6.59106 9.83034 6.29548 9.3866 5.82181L6.5866 7.34848C6.69407 7.77605 6.69407 8.22357 6.5866 8.65114L9.38593 10.1778C9.82967 9.70414 10.4309 9.40856 11.077 9.34648C11.7231 9.2844 12.3696 9.46009 12.8954 9.8406C13.4212 10.2211 13.7902 10.7803 13.9332 11.4134C14.0762 12.0466 13.9834 12.7101 13.6721 13.2796C13.3609 13.8492 12.8526 14.2857 12.2426 14.5073C11.6325 14.7289 10.9626 14.7205 10.3584 14.4835C9.75414 14.2465 9.25707 13.7973 8.96036 13.22C8.66364 12.6428 8.58764 11.9771 8.7466 11.3478V11.3485ZM3.99993 9.33314C4.35356 9.33314 4.69269 9.19267 4.94274 8.94262C5.19279 8.69257 5.33327 8.35343 5.33327 7.99981C5.33327 7.64619 5.19279 7.30705 4.94274 7.057C4.69269 6.80695 4.35356 6.66648 3.99993 6.66648C3.64631 6.66648 3.30717 6.80695 3.05712 7.057C2.80708 7.30705 2.6666 7.64619 2.6666 7.99981C2.6666 8.35343 2.80708 8.69257 3.05712 8.94262C3.30717 9.19267 3.64631 9.33314 3.99993 9.33314ZM11.3333 5.33314C11.6869 5.33314 12.026 5.19267 12.2761 4.94262C12.5261 4.69257 12.6666 4.35343 12.6666 3.99981C12.6666 3.64619 12.5261 3.30705 12.2761 3.057C12.026 2.80695 11.6869 2.66648 11.3333 2.66648C10.9796 2.66648 10.6405 2.80695 10.3905 3.057C10.1404 3.30705 9.99993 3.64619 9.99993 3.99981C9.99993 4.35343 10.1404 4.69257 10.3905 4.94262C10.6405 5.19267 10.9796 5.33314 11.3333 5.33314ZM11.3333 13.3331C11.6869 13.3331 12.026 13.1927 12.2761 12.9426C12.5261 12.6926 12.6666 12.3534 12.6666 11.9998C12.6666 11.6462 12.5261 11.307 12.2761 11.057C12.026 10.807 11.6869 10.6665 11.3333 10.6665C10.9796 10.6665 10.6405 10.807 10.3905 11.057C10.1404 11.307 9.99993 11.6462 9.99993 11.9998C9.99993 12.3534 10.1404 12.6926 10.3905 12.9426C10.6405 13.1927 10.9796 13.3331 11.3333 13.3331Z"
+                            fill="#6F6F6F"
+                          />
+                        </svg>
+                        <h2 class="threadCard_bodyFitureTitle">Bagikan</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="newsDetail.html">
+              <div class="threadCard">
+                <div class="threadCard_head">
+                  <div class="threadCard_headLeft">
+                    <img src="./assets/img/topic-avatar3.svg" alt="avatar" />
+                    <div class="threadCard_NameDate">
+                      <h2 class="threadCard_name">Brooklyn Simmons</h2>
+                      <p class="threadCard_date">Hari ini 10:34</p>
+                    </div>
+                  </div>
+                  <svg
+                    class="block cursor-pointer"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+                      fill="#6F6F6F"
+                    />
+                  </svg>
+                </div>
+                <div class="threadCard_body">
+                  <img
+                    src="./assets/img/hot-threads1.svg"
+                    alt="hot-threads"
+                    class="threadCard_bodyImg"
+                  />
+                  <div class="threadCard_bodyForm">
+                    <h2 class="threadCard_bodyTitle">Technology</h2>
+                    <h3 class="threadCard_bodySubject">
+                      Analysing Potential Problems
+                    </h3>
+                    <p class="threadCard_bodyDesc">
+                      A web browser (commonly referred to as a browser) is a
+                      software application for accessing information on the
+                      World Wide Web.
+                    </p>
+                    <div class="threadCard_bodyFiture">
+                      <div class="threadCard_bodyFitureLeft">
+                        <div class="threadCard_bodyFitureContent">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.86059 13.8828L1.33326 14.6668L2.11726 11.1395C1.60095 10.1738 1.33161 9.09526 1.33326 8.00016C1.33326 4.31816 4.31793 1.3335 7.99993 1.3335C11.6819 1.3335 14.6666 4.31816 14.6666 8.00016C14.6666 11.6822 11.6819 14.6668 7.99993 14.6668C6.90483 14.6685 5.82634 14.3991 4.86059 13.8828ZM5.05393 12.4742L5.48926 12.7075C6.26163 13.1203 7.12419 13.3353 7.99993 13.3335C9.05476 13.3335 10.0859 13.0207 10.963 12.4347C11.84 11.8486 12.5236 11.0157 12.9273 10.0411C13.331 9.0666 13.4366 7.99425 13.2308 6.95968C13.025 5.92512 12.517 4.97481 11.7712 4.22893C11.0253 3.48305 10.075 2.9751 9.04041 2.76931C8.00584 2.56352 6.93349 2.66914 5.95895 3.07281C4.98441 3.47647 4.15146 4.16006 3.56542 5.03712C2.97939 5.91418 2.66659 6.94533 2.66659 8.00016C2.66659 8.8895 2.88326 9.7455 3.29326 10.5108L3.52593 10.9462L3.08926 12.9108L5.05393 12.4742Z"
+                              fill="#6F6F6F"
+                            />
+                          </svg>
+                          <h2 class="threadCard_bodyFitureTitle">
+                            32 Komentar
+                          </h2>
+                        </div>
+                        <div class="threadCard_bodyFitureContent">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.9999 2C11.5946 2 14.5852 4.58667 15.2126 8C14.5859 11.4133 11.5946 14 7.9999 14C4.40523 14 1.41456 11.4133 0.787231 8C1.4139 4.58667 4.40523 2 7.9999 2ZM7.9999 12.6667C9.35954 12.6664 10.6788 12.2045 11.7418 11.3568C12.8048 10.509 13.5485 9.32552 13.8512 8C13.5474 6.67554 12.8032 5.49334 11.7403 4.64668C10.6774 3.80003 9.35877 3.33902 7.9999 3.33902C6.64103 3.33902 5.32236 3.80003 4.25948 4.64668C3.19661 5.49334 2.45241 6.67554 2.14856 8C2.4513 9.32552 3.19501 10.509 4.25799 11.3568C5.32097 12.2045 6.64025 12.6664 7.9999 12.6667ZM7.9999 11C7.20425 11 6.44119 10.6839 5.87858 10.1213C5.31597 9.55871 4.9999 8.79565 4.9999 8C4.9999 7.20435 5.31597 6.44129 5.87858 5.87868C6.44119 5.31607 7.20425 5 7.9999 5C8.79555 5 9.55861 5.31607 10.1212 5.87868C10.6838 6.44129 10.9999 7.20435 10.9999 8C10.9999 8.79565 10.6838 9.55871 10.1212 10.1213C9.55861 10.6839 8.79555 11 7.9999 11ZM7.9999 9.66667C8.44193 9.66667 8.86585 9.49107 9.17841 9.17851C9.49097 8.86595 9.66656 8.44203 9.66656 8C9.66656 7.55797 9.49097 7.13405 9.17841 6.82149C8.86585 6.50893 8.44193 6.33333 7.9999 6.33333C7.55787 6.33333 7.13395 6.50893 6.82139 6.82149C6.50883 7.13405 6.33323 7.55797 6.33323 8C6.33323 8.44203 6.50883 8.86595 6.82139 9.17851C7.13395 9.49107 7.55787 9.66667 7.9999 9.66667Z"
+                              fill="#6F6F6F"
+                            />
+                          </svg>
+                          <h2 class="threadCard_bodyFitureTitle">24 Views</h2>
+                        </div>
+                      </div>
+                      <div class="threadCard_bodyFitureContent">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.7466 11.3485L5.94727 9.82181C5.5818 10.2125 5.10726 10.4843 4.58532 10.6017C4.06337 10.7192 3.51817 10.677 3.02055 10.4805C2.52293 10.284 2.09591 9.94244 1.79498 9.50011C1.49405 9.05777 1.33313 8.53514 1.33313 8.00014C1.33313 7.46515 1.49405 6.94252 1.79498 6.50018C2.09591 6.05784 2.52293 5.71624 3.02055 5.51978C3.51817 5.32332 4.06337 5.28108 4.58532 5.39855C5.10726 5.51602 5.5818 5.78777 5.94727 6.17848L8.74727 4.65181C8.5883 4.02253 8.6643 3.35687 8.96102 2.77961C9.25774 2.20235 9.75481 1.75313 10.359 1.51614C10.9633 1.27916 11.6332 1.27068 12.2433 1.4923C12.8533 1.71392 13.3616 2.15042 13.6728 2.71998C13.984 3.28955 14.0769 3.95307 13.9339 4.58617C13.7909 5.21928 13.4219 5.7785 12.8961 6.15902C12.3703 6.53953 11.7237 6.71522 11.0777 6.65314C10.4316 6.59106 9.83034 6.29548 9.3866 5.82181L6.5866 7.34848C6.69407 7.77605 6.69407 8.22357 6.5866 8.65114L9.38593 10.1778C9.82967 9.70414 10.4309 9.40856 11.077 9.34648C11.7231 9.2844 12.3696 9.46009 12.8954 9.8406C13.4212 10.2211 13.7902 10.7803 13.9332 11.4134C14.0762 12.0466 13.9834 12.7101 13.6721 13.2796C13.3609 13.8492 12.8526 14.2857 12.2426 14.5073C11.6325 14.7289 10.9626 14.7205 10.3584 14.4835C9.75414 14.2465 9.25707 13.7973 8.96036 13.22C8.66364 12.6428 8.58764 11.9771 8.7466 11.3478V11.3485ZM3.99993 9.33314C4.35356 9.33314 4.69269 9.19267 4.94274 8.94262C5.19279 8.69257 5.33327 8.35343 5.33327 7.99981C5.33327 7.64619 5.19279 7.30705 4.94274 7.057C4.69269 6.80695 4.35356 6.66648 3.99993 6.66648C3.64631 6.66648 3.30717 6.80695 3.05712 7.057C2.80708 7.30705 2.6666 7.64619 2.6666 7.99981C2.6666 8.35343 2.80708 8.69257 3.05712 8.94262C3.30717 9.19267 3.64631 9.33314 3.99993 9.33314ZM11.3333 5.33314C11.6869 5.33314 12.026 5.19267 12.2761 4.94262C12.5261 4.69257 12.6666 4.35343 12.6666 3.99981C12.6666 3.64619 12.5261 3.30705 12.2761 3.057C12.026 2.80695 11.6869 2.66648 11.3333 2.66648C10.9796 2.66648 10.6405 2.80695 10.3905 3.057C10.1404 3.30705 9.99993 3.64619 9.99993 3.99981C9.99993 4.35343 10.1404 4.69257 10.3905 4.94262C10.6405 5.19267 10.9796 5.33314 11.3333 5.33314ZM11.3333 13.3331C11.6869 13.3331 12.026 13.1927 12.2761 12.9426C12.5261 12.6926 12.6666 12.3534 12.6666 11.9998C12.6666 11.6462 12.5261 11.307 12.2761 11.057C12.026 10.807 11.6869 10.6665 11.3333 10.6665C10.9796 10.6665 10.6405 10.807 10.3905 11.057C10.1404 11.307 9.99993 11.6462 9.99993 11.9998C9.99993 12.3534 10.1404 12.6926 10.3905 12.9426C10.6405 13.1927 10.9796 13.3331 11.3333 13.3331Z"
+                            fill="#6F6F6F"
+                          />
+                        </svg>
+                        <h2 class="threadCard_bodyFitureTitle">Bagikan</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="newsDetail.html">
+              <div class="threadCard">
+                <div class="threadCard_head">
+                  <div class="threadCard_headLeft">
+                    <img src="./assets/img/topic-avatar.svg" alt="avatar" />
+                    <div class="threadCard_NameDate">
+                      <h2 class="threadCard_name">Eleanor Pena</h2>
+                      <p class="threadCard_date">Senin, 24 Juni 2021 13:32</p>
+                    </div>
+                  </div>
+                  <svg
+                    class="block cursor-pointer"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+                      fill="#6F6F6F"
+                    />
+                  </svg>
+                </div>
+                <div class="threadCard_body">
+                  <img
+                    src="./assets/img/hot-threads4.svg"
+                    alt="hot-threads"
+                    class="threadCard_bodyImg"
+                  />
+                  <div class="threadCard_bodyForm">
+                    <h2 class="threadCard_bodyTitle">Lifestyle</h2>
+                    <h3 class="threadCard_bodySubject">
+                      How to design a product that can grow itself 10x in year:
+                    </h3>
+                    <p class="threadCard_bodyDesc">
+                      Something has always existed. According to physics, there
+                      can never be true physical nothingness—though there can be
+                      times when...
+                    </p>
+                    <div class="threadCard_bodyFiture">
+                      <div class="threadCard_bodyFitureLeft">
+                        <div class="threadCard_bodyFitureContent">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.86059 13.8828L1.33326 14.6668L2.11726 11.1395C1.60095 10.1738 1.33161 9.09526 1.33326 8.00016C1.33326 4.31816 4.31793 1.3335 7.99993 1.3335C11.6819 1.3335 14.6666 4.31816 14.6666 8.00016C14.6666 11.6822 11.6819 14.6668 7.99993 14.6668C6.90483 14.6685 5.82634 14.3991 4.86059 13.8828ZM5.05393 12.4742L5.48926 12.7075C6.26163 13.1203 7.12419 13.3353 7.99993 13.3335C9.05476 13.3335 10.0859 13.0207 10.963 12.4347C11.84 11.8486 12.5236 11.0157 12.9273 10.0411C13.331 9.0666 13.4366 7.99425 13.2308 6.95968C13.025 5.92512 12.517 4.97481 11.7712 4.22893C11.0253 3.48305 10.075 2.9751 9.04041 2.76931C8.00584 2.56352 6.93349 2.66914 5.95895 3.07281C4.98441 3.47647 4.15146 4.16006 3.56542 5.03712C2.97939 5.91418 2.66659 6.94533 2.66659 8.00016C2.66659 8.8895 2.88326 9.7455 3.29326 10.5108L3.52593 10.9462L3.08926 12.9108L5.05393 12.4742Z"
+                              fill="#6F6F6F"
+                            />
+                          </svg>
+                          <h2 class="threadCard_bodyFitureTitle">
+                            512 Komentar
+                          </h2>
+                        </div>
+                        <div class="threadCard_bodyFitureContent">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.9999 2C11.5946 2 14.5852 4.58667 15.2126 8C14.5859 11.4133 11.5946 14 7.9999 14C4.40523 14 1.41456 11.4133 0.787231 8C1.4139 4.58667 4.40523 2 7.9999 2ZM7.9999 12.6667C9.35954 12.6664 10.6788 12.2045 11.7418 11.3568C12.8048 10.509 13.5485 9.32552 13.8512 8C13.5474 6.67554 12.8032 5.49334 11.7403 4.64668C10.6774 3.80003 9.35877 3.33902 7.9999 3.33902C6.64103 3.33902 5.32236 3.80003 4.25948 4.64668C3.19661 5.49334 2.45241 6.67554 2.14856 8C2.4513 9.32552 3.19501 10.509 4.25799 11.3568C5.32097 12.2045 6.64025 12.6664 7.9999 12.6667ZM7.9999 11C7.20425 11 6.44119 10.6839 5.87858 10.1213C5.31597 9.55871 4.9999 8.79565 4.9999 8C4.9999 7.20435 5.31597 6.44129 5.87858 5.87868C6.44119 5.31607 7.20425 5 7.9999 5C8.79555 5 9.55861 5.31607 10.1212 5.87868C10.6838 6.44129 10.9999 7.20435 10.9999 8C10.9999 8.79565 10.6838 9.55871 10.1212 10.1213C9.55861 10.6839 8.79555 11 7.9999 11ZM7.9999 9.66667C8.44193 9.66667 8.86585 9.49107 9.17841 9.17851C9.49097 8.86595 9.66656 8.44203 9.66656 8C9.66656 7.55797 9.49097 7.13405 9.17841 6.82149C8.86585 6.50893 8.44193 6.33333 7.9999 6.33333C7.55787 6.33333 7.13395 6.50893 6.82139 6.82149C6.50883 7.13405 6.33323 7.55797 6.33323 8C6.33323 8.44203 6.50883 8.86595 6.82139 9.17851C7.13395 9.49107 7.55787 9.66667 7.9999 9.66667Z"
+                              fill="#6F6F6F"
+                            />
+                          </svg>
+                          <h2 class="threadCard_bodyFitureTitle">764 Views</h2>
+                        </div>
+                      </div>
+                      <div class="threadCard_bodyFitureContent">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.7466 11.3485L5.94727 9.82181C5.5818 10.2125 5.10726 10.4843 4.58532 10.6017C4.06337 10.7192 3.51817 10.677 3.02055 10.4805C2.52293 10.284 2.09591 9.94244 1.79498 9.50011C1.49405 9.05777 1.33313 8.53514 1.33313 8.00014C1.33313 7.46515 1.49405 6.94252 1.79498 6.50018C2.09591 6.05784 2.52293 5.71624 3.02055 5.51978C3.51817 5.32332 4.06337 5.28108 4.58532 5.39855C5.10726 5.51602 5.5818 5.78777 5.94727 6.17848L8.74727 4.65181C8.5883 4.02253 8.6643 3.35687 8.96102 2.77961C9.25774 2.20235 9.75481 1.75313 10.359 1.51614C10.9633 1.27916 11.6332 1.27068 12.2433 1.4923C12.8533 1.71392 13.3616 2.15042 13.6728 2.71998C13.984 3.28955 14.0769 3.95307 13.9339 4.58617C13.7909 5.21928 13.4219 5.7785 12.8961 6.15902C12.3703 6.53953 11.7237 6.71522 11.0777 6.65314C10.4316 6.59106 9.83034 6.29548 9.3866 5.82181L6.5866 7.34848C6.69407 7.77605 6.69407 8.22357 6.5866 8.65114L9.38593 10.1778C9.82967 9.70414 10.4309 9.40856 11.077 9.34648C11.7231 9.2844 12.3696 9.46009 12.8954 9.8406C13.4212 10.2211 13.7902 10.7803 13.9332 11.4134C14.0762 12.0466 13.9834 12.7101 13.6721 13.2796C13.3609 13.8492 12.8526 14.2857 12.2426 14.5073C11.6325 14.7289 10.9626 14.7205 10.3584 14.4835C9.75414 14.2465 9.25707 13.7973 8.96036 13.22C8.66364 12.6428 8.58764 11.9771 8.7466 11.3478V11.3485ZM3.99993 9.33314C4.35356 9.33314 4.69269 9.19267 4.94274 8.94262C5.19279 8.69257 5.33327 8.35343 5.33327 7.99981C5.33327 7.64619 5.19279 7.30705 4.94274 7.057C4.69269 6.80695 4.35356 6.66648 3.99993 6.66648C3.64631 6.66648 3.30717 6.80695 3.05712 7.057C2.80708 7.30705 2.6666 7.64619 2.6666 7.99981C2.6666 8.35343 2.80708 8.69257 3.05712 8.94262C3.30717 9.19267 3.64631 9.33314 3.99993 9.33314ZM11.3333 5.33314C11.6869 5.33314 12.026 5.19267 12.2761 4.94262C12.5261 4.69257 12.6666 4.35343 12.6666 3.99981C12.6666 3.64619 12.5261 3.30705 12.2761 3.057C12.026 2.80695 11.6869 2.66648 11.3333 2.66648C10.9796 2.66648 10.6405 2.80695 10.3905 3.057C10.1404 3.30705 9.99993 3.64619 9.99993 3.99981C9.99993 4.35343 10.1404 4.69257 10.3905 4.94262C10.6405 5.19267 10.9796 5.33314 11.3333 5.33314ZM11.3333 13.3331C11.6869 13.3331 12.026 13.1927 12.2761 12.9426C12.5261 12.6926 12.6666 12.3534 12.6666 11.9998C12.6666 11.6462 12.5261 11.307 12.2761 11.057C12.026 10.807 11.6869 10.6665 11.3333 10.6665C10.9796 10.6665 10.6405 10.807 10.3905 11.057C10.1404 11.307 9.99993 11.6462 9.99993 11.9998C9.99993 12.3534 10.1404 12.6926 10.3905 12.9426C10.6405 13.1927 10.9796 13.3331 11.3333 13.3331Z"
+                            fill="#6F6F6F"
+                          />
+                        </svg>
+                        <h2 class="threadCard_bodyFitureTitle">Bagikan</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="newsDetail.html">
+              <div class="threadCard">
+                <div class="threadCard_head">
+                  <div class="threadCard_headLeft">
+                    <img src="./assets/img/topic-avatar2.svg" alt="avatar" />
+                    <div class="threadCard_NameDate">
+                      <h2 class="threadCard_name">Jane Cooper</h2>
+                      <p class="threadCard_date">Kemarin 10:34</p>
+                    </div>
+                  </div>
+                  <svg
+                    class="block cursor-pointer"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+                      fill="#6F6F6F"
+                    />
+                  </svg>
+                </div>
+                <div class="threadCard_body">
+                  <img
+                    src="./assets/img/hot-threads5.svg"
+                    alt="hot-threads"
+                    class="threadCard_bodyImg"
+                  />
+                  <div class="threadCard_bodyForm">
+                    <h2 class="threadCard_bodyTitle">Technology</h2>
+                    <h3 class="threadCard_bodySubject">
+                      The Calm meditation app is getting its own
+                      celebrity-filled HBO Ma...
+                    </h3>
+                    <p class="threadCard_bodyDesc">
+                      Consider that for a moment: everything we see around us is
+                      assumed to have had a cause and is contingent upon
+                      something else.
+                    </p>
+                    <div class="threadCard_bodyFiture">
+                      <div class="threadCard_bodyFitureLeft">
+                        <div class="threadCard_bodyFitureContent">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4.86059 13.8828L1.33326 14.6668L2.11726 11.1395C1.60095 10.1738 1.33161 9.09526 1.33326 8.00016C1.33326 4.31816 4.31793 1.3335 7.99993 1.3335C11.6819 1.3335 14.6666 4.31816 14.6666 8.00016C14.6666 11.6822 11.6819 14.6668 7.99993 14.6668C6.90483 14.6685 5.82634 14.3991 4.86059 13.8828ZM5.05393 12.4742L5.48926 12.7075C6.26163 13.1203 7.12419 13.3353 7.99993 13.3335C9.05476 13.3335 10.0859 13.0207 10.963 12.4347C11.84 11.8486 12.5236 11.0157 12.9273 10.0411C13.331 9.0666 13.4366 7.99425 13.2308 6.95968C13.025 5.92512 12.517 4.97481 11.7712 4.22893C11.0253 3.48305 10.075 2.9751 9.04041 2.76931C8.00584 2.56352 6.93349 2.66914 5.95895 3.07281C4.98441 3.47647 4.15146 4.16006 3.56542 5.03712C2.97939 5.91418 2.66659 6.94533 2.66659 8.00016C2.66659 8.8895 2.88326 9.7455 3.29326 10.5108L3.52593 10.9462L3.08926 12.9108L5.05393 12.4742Z"
+                              fill="#6F6F6F"
+                            />
+                          </svg>
+                          <h2 class="threadCard_bodyFitureTitle">
+                            232 Komentar
+                          </h2>
+                        </div>
+                        <div class="threadCard_bodyFitureContent">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.9999 2C11.5946 2 14.5852 4.58667 15.2126 8C14.5859 11.4133 11.5946 14 7.9999 14C4.40523 14 1.41456 11.4133 0.787231 8C1.4139 4.58667 4.40523 2 7.9999 2ZM7.9999 12.6667C9.35954 12.6664 10.6788 12.2045 11.7418 11.3568C12.8048 10.509 13.5485 9.32552 13.8512 8C13.5474 6.67554 12.8032 5.49334 11.7403 4.64668C10.6774 3.80003 9.35877 3.33902 7.9999 3.33902C6.64103 3.33902 5.32236 3.80003 4.25948 4.64668C3.19661 5.49334 2.45241 6.67554 2.14856 8C2.4513 9.32552 3.19501 10.509 4.25799 11.3568C5.32097 12.2045 6.64025 12.6664 7.9999 12.6667ZM7.9999 11C7.20425 11 6.44119 10.6839 5.87858 10.1213C5.31597 9.55871 4.9999 8.79565 4.9999 8C4.9999 7.20435 5.31597 6.44129 5.87858 5.87868C6.44119 5.31607 7.20425 5 7.9999 5C8.79555 5 9.55861 5.31607 10.1212 5.87868C10.6838 6.44129 10.9999 7.20435 10.9999 8C10.9999 8.79565 10.6838 9.55871 10.1212 10.1213C9.55861 10.6839 8.79555 11 7.9999 11ZM7.9999 9.66667C8.44193 9.66667 8.86585 9.49107 9.17841 9.17851C9.49097 8.86595 9.66656 8.44203 9.66656 8C9.66656 7.55797 9.49097 7.13405 9.17841 6.82149C8.86585 6.50893 8.44193 6.33333 7.9999 6.33333C7.55787 6.33333 7.13395 6.50893 6.82139 6.82149C6.50883 7.13405 6.33323 7.55797 6.33323 8C6.33323 8.44203 6.50883 8.86595 6.82139 9.17851C7.13395 9.49107 7.55787 9.66667 7.9999 9.66667Z"
+                              fill="#6F6F6F"
+                            />
+                          </svg>
+                          <h2 class="threadCard_bodyFitureTitle">32 Views</h2>
+                        </div>
+                      </div>
+                      <div class="threadCard_bodyFitureContent">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.7466 11.3485L5.94727 9.82181C5.5818 10.2125 5.10726 10.4843 4.58532 10.6017C4.06337 10.7192 3.51817 10.677 3.02055 10.4805C2.52293 10.284 2.09591 9.94244 1.79498 9.50011C1.49405 9.05777 1.33313 8.53514 1.33313 8.00014C1.33313 7.46515 1.49405 6.94252 1.79498 6.50018C2.09591 6.05784 2.52293 5.71624 3.02055 5.51978C3.51817 5.32332 4.06337 5.28108 4.58532 5.39855C5.10726 5.51602 5.5818 5.78777 5.94727 6.17848L8.74727 4.65181C8.5883 4.02253 8.6643 3.35687 8.96102 2.77961C9.25774 2.20235 9.75481 1.75313 10.359 1.51614C10.9633 1.27916 11.6332 1.27068 12.2433 1.4923C12.8533 1.71392 13.3616 2.15042 13.6728 2.71998C13.984 3.28955 14.0769 3.95307 13.9339 4.58617C13.7909 5.21928 13.4219 5.7785 12.8961 6.15902C12.3703 6.53953 11.7237 6.71522 11.0777 6.65314C10.4316 6.59106 9.83034 6.29548 9.3866 5.82181L6.5866 7.34848C6.69407 7.77605 6.69407 8.22357 6.5866 8.65114L9.38593 10.1778C9.82967 9.70414 10.4309 9.40856 11.077 9.34648C11.7231 9.2844 12.3696 9.46009 12.8954 9.8406C13.4212 10.2211 13.7902 10.7803 13.9332 11.4134C14.0762 12.0466 13.9834 12.7101 13.6721 13.2796C13.3609 13.8492 12.8526 14.2857 12.2426 14.5073C11.6325 14.7289 10.9626 14.7205 10.3584 14.4835C9.75414 14.2465 9.25707 13.7973 8.96036 13.22C8.66364 12.6428 8.58764 11.9771 8.7466 11.3478V11.3485ZM3.99993 9.33314C4.35356 9.33314 4.69269 9.19267 4.94274 8.94262C5.19279 8.69257 5.33327 8.35343 5.33327 7.99981C5.33327 7.64619 5.19279 7.30705 4.94274 7.057C4.69269 6.80695 4.35356 6.66648 3.99993 6.66648C3.64631 6.66648 3.30717 6.80695 3.05712 7.057C2.80708 7.30705 2.6666 7.64619 2.6666 7.99981C2.6666 8.35343 2.80708 8.69257 3.05712 8.94262C3.30717 9.19267 3.64631 9.33314 3.99993 9.33314ZM11.3333 5.33314C11.6869 5.33314 12.026 5.19267 12.2761 4.94262C12.5261 4.69257 12.6666 4.35343 12.6666 3.99981C12.6666 3.64619 12.5261 3.30705 12.2761 3.057C12.026 2.80695 11.6869 2.66648 11.3333 2.66648C10.9796 2.66648 10.6405 2.80695 10.3905 3.057C10.1404 3.30705 9.99993 3.64619 9.99993 3.99981C9.99993 4.35343 10.1404 4.69257 10.3905 4.94262C10.6405 5.19267 10.9796 5.33314 11.3333 5.33314ZM11.3333 13.3331C11.6869 13.3331 12.026 13.1927 12.2761 12.9426C12.5261 12.6926 12.6666 12.3534 12.6666 11.9998C12.6666 11.6462 12.5261 11.307 12.2761 11.057C12.026 10.807 11.6869 10.6665 11.3333 10.6665C10.9796 10.6665 10.6405 10.807 10.3905 11.057C10.1404 11.307 9.99993 11.6462 9.99993 11.9998C9.99993 12.3534 10.1404 12.6926 10.3905 12.9426C10.6405 13.1927 10.9796 13.3331 11.3333 13.3331Z"
+                            fill="#6F6F6F"
+                          />
+                        </svg>
+                        <h2 class="threadCard_bodyFitureTitle">Bagikan</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <button class="seeAll">Lihat Semua</button>
+
+            <!-- Hot Threads Card End -->
+          </div>
+        </div>
+        <!-- Hot Threads End-->
+
+        <!-- Pertanyaan Start -->
+        <div class="question">
+          <div class="questionHead">
+            <div class="questionHeadIcons">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.763 17H20V5H4V18.385L5.763 17ZM6.455 19L2 22.5V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V18C22 18.2652 21.8946 18.5196 21.7071 18.7071C21.5196 18.8946 21.2652 19 21 19H6.455ZM11 14H13V16H11V14ZM8.567 8.813C8.69692 8.16279 9.00882 7.56285 9.4664 7.08298C9.92397 6.60311 10.5084 6.26304 11.1517 6.10236C11.795 5.94167 12.4707 5.96697 13.1002 6.17532C13.7297 6.38366 14.287 6.76647 14.7075 7.27922C15.1279 7.79196 15.394 8.41355 15.475 9.07166C15.5559 9.72976 15.4483 10.3973 15.1646 10.9966C14.881 11.596 14.433 12.1024 13.8727 12.4571C13.3125 12.8118 12.6631 13 12 13H11V11H12C12.2841 11 12.5623 10.9193 12.8023 10.7673C13.0423 10.6154 13.2343 10.3984 13.3558 10.1416C13.4773 9.8848 13.5234 9.5988 13.4887 9.31684C13.454 9.03489 13.34 8.76858 13.1598 8.54891C12.9797 8.32924 12.7409 8.16523 12.4712 8.07597C12.2015 7.98671 11.912 7.97587 11.6364 8.04471C11.3608 8.11354 11.1104 8.25923 10.9144 8.46482C10.7183 8.6704 10.5847 8.92743 10.529 9.206L8.567 8.813Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <h2 class="questionHeadTitle">Pertanyaan</h2>
+          </div>
+          <div class="questionBody">
+            <div class="questionCard">
+              <div class="questionCardHead">
+                <img src="./assets/img/eleanorpena.svg" alt="avatar" />
+                <div class="questionCardNameDate">
+                  <h2 class="questionCardName">Eleanor Pena</h2>
+                  <p class="questionCardDate">Senin, 24 Juni 2021 13:32</p>
+                </div>
+              </div>
+              <div class="questionCardBody">
+                <h2 class="questionCardBodyTitle">Management</h2>
+                <p class="questionCardBodyDesc">
+                  Bagaimana caranya untuk me-manage waktu agar lebih efektif
+                  selama bekerja di rumah dan proses koordinasi dengan rekan
+                  lebih efisien?
+                </p>
+                <div class="questionFiture">
+                  <button class="questionFitureAnswer">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.86059 13.8826L1.33326 14.6666L2.11726 11.1393C1.60095 10.1735 1.33161 9.09502 1.33326 7.99992C1.33326 4.31792 4.31793 1.33325 7.99993 1.33325C11.6819 1.33325 14.6666 4.31792 14.6666 7.99992C14.6666 11.6819 11.6819 14.6666 7.99993 14.6666C6.90483 14.6682 5.82634 14.3989 4.86059 13.8826ZM5.05393 12.4739L5.48926 12.7073C6.26163 13.12 7.12419 13.3351 7.99993 13.3333C9.05476 13.3333 10.0859 13.0205 10.963 12.4344C11.84 11.8484 12.5236 11.0154 12.9273 10.0409C13.331 9.06636 13.4366 7.994 13.2308 6.95944C13.025 5.92487 12.517 4.97456 11.7712 4.22868C11.0253 3.4828 10.075 2.97485 9.04041 2.76906C8.00584 2.56328 6.93349 2.66889 5.95895 3.07256C4.98441 3.47623 4.15146 4.15982 3.56542 5.03688C2.97939 5.91394 2.66659 6.94509 2.66659 7.99992C2.66659 8.88925 2.88326 9.74525 3.29326 10.5106L3.52593 10.9459L3.08926 12.9106L5.05393 12.4739Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+                    <h2 class="questionFitureAnswerTitle">2 Jawaban</h2>
+                  </button>
+                  <button class="questionFitureMissed">Terjawab</button>
+                </div>
+              </div>
+            </div>
+            <div class="questionCard">
+              <div class="questionCardHead">
+                <img src="./assets/img/eleanorpena.svg" alt="avatar" />
+                <div class="questionCardNameDate">
+                  <h2 class="questionCardName">Eleanor Pena</h2>
+                  <p class="questionCardDate">Senin, 24 Juni 2021 13:32</p>
+                </div>
+              </div>
+              <div class="questionCardBody">
+                <h2 class="questionCardBodyTitle">Management</h2>
+                <p class="questionCardBodyDesc">
+                  Bagaimana caranya untuk me-manage waktu agar lebih efektif
+                  selama bekerja di rumah dan proses koordinasi dengan rekan
+                  lebih efisien?
+                </p>
+                <div class="questionFiture">
+                  <button class="questionFitureAnswer">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.86059 13.8826L1.33326 14.6666L2.11726 11.1393C1.60095 10.1735 1.33161 9.09502 1.33326 7.99992C1.33326 4.31792 4.31793 1.33325 7.99993 1.33325C11.6819 1.33325 14.6666 4.31792 14.6666 7.99992C14.6666 11.6819 11.6819 14.6666 7.99993 14.6666C6.90483 14.6682 5.82634 14.3989 4.86059 13.8826ZM5.05393 12.4739L5.48926 12.7073C6.26163 13.12 7.12419 13.3351 7.99993 13.3333C9.05476 13.3333 10.0859 13.0205 10.963 12.4344C11.84 11.8484 12.5236 11.0154 12.9273 10.0409C13.331 9.06636 13.4366 7.994 13.2308 6.95944C13.025 5.92487 12.517 4.97456 11.7712 4.22868C11.0253 3.4828 10.075 2.97485 9.04041 2.76906C8.00584 2.56328 6.93349 2.66889 5.95895 3.07256C4.98441 3.47623 4.15146 4.15982 3.56542 5.03688C2.97939 5.91394 2.66659 6.94509 2.66659 7.99992C2.66659 8.88925 2.88326 9.74525 3.29326 10.5106L3.52593 10.9459L3.08926 12.9106L5.05393 12.4739Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+                    <h2 class="questionFitureAnswerTitle">2 Jawaban</h2>
+                  </button>
+                  <button class="questionFitureMissed">Terjawab</button>
+                </div>
+              </div>
+            </div>
+            <div class="questionNextSlide">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.172 12.0001L9.34302 9.17208L10.757 7.75708L15 12.0001L10.757 16.2431L9.34302 14.8281L12.172 12.0001Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="paginate">
+            <svg
+              width="56"
+              height="8"
+              viewBox="0 0 56 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="4" cy="4" r="4" fill="#00B0E9" />
+              <circle cx="20" cy="4" r="4" fill="#CCEFFB" />
+              <circle cx="36" cy="4" r="4" fill="#CCEFFB" />
+              <circle cx="52" cy="4" r="4" fill="#CCEFFB" />
+            </svg>
+          </div>
+
+          <button class="seeAll">Lihat Semua</button>
+        </div>
+        <!-- Pertanyaan End -->
+
+        <!-- KM TV Start -->
+        <div class="kmtv">
+          <div class="kmtvHead">
+            <img src="./assets/img/kmtv.svg" alt="kmtv" class="kmtvHeadImg" />
+            <img
+              src="./assets/icons/play.svg"
+              alt="play"
+              class="kmtvHeadIcons"
+            />
+            <div class="kmtvHeadForm">
+              <h2 class="kmtvHeadFormTitle">
+                The More Important the Work, the More Important the Rest
+              </h2>
+              <p class="kmtvHeadFormDesc">
+                Something has always existed. According to physics, there can
+                never be true physical nothingness—though there ca...
+              </p>
+              <div class="kmtvHeadFiture">
+                <div class="kmtvHeadFitureContent">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.9999 2C11.5946 2 14.5852 4.58667 15.2126 8C14.5859 11.4133 11.5946 14 7.9999 14C4.40523 14 1.41456 11.4133 0.787231 8C1.4139 4.58667 4.40523 2 7.9999 2ZM7.9999 12.6667C9.35954 12.6664 10.6788 12.2045 11.7418 11.3568C12.8048 10.509 13.5485 9.32552 13.8512 8C13.5474 6.67554 12.8032 5.49334 11.7403 4.64668C10.6774 3.80003 9.35877 3.33902 7.9999 3.33902C6.64103 3.33902 5.32236 3.80003 4.25948 4.64668C3.19661 5.49334 2.45241 6.67554 2.14856 8C2.4513 9.32552 3.19501 10.509 4.25799 11.3568C5.32097 12.2045 6.64025 12.6664 7.9999 12.6667ZM7.9999 11C7.20425 11 6.44119 10.6839 5.87858 10.1213C5.31597 9.55871 4.9999 8.79565 4.9999 8C4.9999 7.20435 5.31597 6.44129 5.87858 5.87868C6.44119 5.31607 7.20425 5 7.9999 5C8.79555 5 9.55861 5.31607 10.1212 5.87868C10.6838 6.44129 10.9999 7.20435 10.9999 8C10.9999 8.79565 10.6838 9.55871 10.1212 10.1213C9.55861 10.6839 8.79555 11 7.9999 11ZM7.9999 9.66667C8.44193 9.66667 8.86585 9.49107 9.17841 9.17851C9.49097 8.86595 9.66656 8.44203 9.66656 8C9.66656 7.55797 9.49097 7.13405 9.17841 6.82149C8.86585 6.50893 8.44193 6.33333 7.9999 6.33333C7.55787 6.33333 7.13395 6.50893 6.82139 6.82149C6.50883 7.13405 6.33323 7.55797 6.33323 8C6.33323 8.44203 6.50883 8.86595 6.82139 9.17851C7.13395 9.49107 7.55787 9.66667 7.9999 9.66667Z"
+                      fill="#6F6F6F"
+                    />
+                  </svg>
+                  <h2 class="kmtvHeadFitureTitle">24 Views</h2>
+                </div>
+                <div class="kmtvHeadFitureContent">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.7466 11.3487L5.94727 9.82205C5.5818 10.2128 5.10726 10.4845 4.58532 10.602C4.06337 10.7194 3.51817 10.6772 3.02055 10.4807C2.52293 10.2843 2.09591 9.94269 1.79498 9.50035C1.49405 9.05801 1.33313 8.53538 1.33313 8.00039C1.33313 7.46539 1.49405 6.94276 1.79498 6.50042C2.09591 6.05809 2.52293 5.71649 3.02055 5.52003C3.51817 5.32357 4.06337 5.28133 4.58532 5.3988C5.10726 5.51627 5.5818 5.78801 5.94727 6.17872L8.74727 4.65205C8.5883 4.02277 8.6643 3.35711 8.96102 2.77986C9.25774 2.2026 9.75481 1.75337 10.359 1.51639C10.9633 1.2794 11.6332 1.27092 12.2433 1.49254C12.8533 1.71416 13.3616 2.15067 13.6728 2.72023C13.984 3.28979 14.0769 3.95331 13.9339 4.58642C13.7909 5.21952 13.4219 5.77874 12.8961 6.15926C12.3703 6.53978 11.7237 6.71546 11.0777 6.65338C10.4316 6.59131 9.83034 6.29573 9.3866 5.82205L6.5866 7.34872C6.69407 7.77629 6.69407 8.22381 6.5866 8.65139L9.38593 10.1781C9.82967 9.70438 10.4309 9.4088 11.077 9.34672C11.7231 9.28465 12.3696 9.46033 12.8954 9.84085C13.4212 10.2214 13.7902 10.7806 13.9332 11.4137C14.0762 12.0468 13.9834 12.7103 13.6721 13.2799C13.3609 13.8494 12.8526 14.2859 12.2426 14.5076C11.6325 14.7292 10.9626 14.7207 10.3584 14.4837C9.75414 14.2467 9.25707 13.7975 8.96036 13.2203C8.66364 12.643 8.58764 11.9773 8.7466 11.3481V11.3487ZM3.99993 9.33339C4.35356 9.33339 4.69269 9.19291 4.94274 8.94286C5.19279 8.69281 5.33327 8.35368 5.33327 8.00005C5.33327 7.64643 5.19279 7.30729 4.94274 7.05724C4.69269 6.8072 4.35356 6.66672 3.99993 6.66672C3.64631 6.66672 3.30717 6.8072 3.05712 7.05724C2.80708 7.30729 2.6666 7.64643 2.6666 8.00005C2.6666 8.35368 2.80708 8.69281 3.05712 8.94286C3.30717 9.19291 3.64631 9.33339 3.99993 9.33339ZM11.3333 5.33339C11.6869 5.33339 12.026 5.19291 12.2761 4.94286C12.5261 4.69281 12.6666 4.35368 12.6666 4.00005C12.6666 3.64643 12.5261 3.30729 12.2761 3.05725C12.026 2.8072 11.6869 2.66672 11.3333 2.66672C10.9796 2.66672 10.6405 2.8072 10.3905 3.05725C10.1404 3.30729 9.99993 3.64643 9.99993 4.00005C9.99993 4.35368 10.1404 4.69281 10.3905 4.94286C10.6405 5.19291 10.9796 5.33339 11.3333 5.33339ZM11.3333 13.3334C11.6869 13.3334 12.026 13.1929 12.2761 12.9429C12.5261 12.6928 12.6666 12.3537 12.6666 12.0001C12.6666 11.6464 12.5261 11.3073 12.2761 11.0572C12.026 10.8072 11.6869 10.6667 11.3333 10.6667C10.9796 10.6667 10.6405 10.8072 10.3905 11.0572C10.1404 11.3073 9.99993 11.6464 9.99993 12.0001C9.99993 12.3537 10.1404 12.6928 10.3905 12.9429C10.6405 13.1929 10.9796 13.3334 11.3333 13.3334Z"
+                      fill="#6F6F6F"
+                    />
+                  </svg>
+                  <h2 class="kmtvHeadFitureTitle">Bagikan</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kmtvBody">
+            <img
+              src="./assets/icons/top-km-creator.svg"
+              alt="top"
+              class="kmtvBodyIcons"
+            />
+            <h2 class="kmtvBodyTitle">Top KM Creator</h2>
+            <img
+              src="./assets/img/top-kreator.svg"
+              alt="trophyImage"
+              class="kmtvBodyImage"
+            />
+          </div>
+          <div class="kmtvFooter">
+            <div class="kmtvCard">
+              <div class="kmtvCardHead">
+                <div class="kmtvCardHeadLeft">
+                  <img src="./assets/icons/trophy-kmtv.svg" alt="trophy-kmtv" />
+                  <img
+                    src="./assets/img/topic-avatar3.svg"
+                    alt="Brooklyn"
+                    class="kmtvCardHeadLeftImage"
+                  />
+                  <div class="kmtvCardHeadLeftNameAddress">
+                    <h2 class="kmtvCardHeadLeftName">Brooklyn Simmons</h2>
+                    <p class="kmtvCardHeadLeftAddress">Region Jakarta</p>
+                  </div>
+                </div>
+                <div class="kmtvCardHeadRight">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 10.5H20V9.5C20 9.23478 19.8946 8.98043 19.7071 8.79289C19.5196 8.60536 19.2652 8.5 19 8.5C18.7348 8.5 18.4804 8.60536 18.2929 8.79289C18.1054 8.98043 18 9.23478 18 9.5V10.5H17C16.7348 10.5 16.4804 10.6054 16.2929 10.7929C16.1054 10.9804 16 11.2348 16 11.5C16 11.7652 16.1054 12.0196 16.2929 12.2071C16.4804 12.3946 16.7348 12.5 17 12.5H18V13.5C18 13.7652 18.1054 14.0196 18.2929 14.2071C18.4804 14.3946 18.7348 14.5 19 14.5C19.2652 14.5 19.5196 14.3946 19.7071 14.2071C19.8946 14.0196 20 13.7652 20 13.5V12.5H21C21.2652 12.5 21.5196 12.3946 21.7071 12.2071C21.8946 12.0196 22 11.7652 22 11.5C22 11.2348 21.8946 10.9804 21.7071 10.7929C21.5196 10.6054 21.2652 10.5 21 10.5ZM13.3 12.22C13.8336 11.7581 14.2616 11.1869 14.5549 10.545C14.8482 9.90316 15 9.20571 15 8.5C15 7.17392 14.4732 5.90215 13.5355 4.96447C12.5979 4.02678 11.3261 3.5 10 3.5C8.67392 3.5 7.40215 4.02678 6.46447 4.96447C5.52678 5.90215 5 7.17392 5 8.5C4.99999 9.20571 5.1518 9.90316 5.44513 10.545C5.73845 11.1869 6.16642 11.7581 6.7 12.22C5.30014 12.8539 4.11247 13.8775 3.27898 15.1685C2.4455 16.4596 2.00147 17.9633 2 19.5C2 19.7652 2.10536 20.0196 2.29289 20.2071C2.48043 20.3946 2.73478 20.5 3 20.5C3.26522 20.5 3.51957 20.3946 3.70711 20.2071C3.89464 20.0196 4 19.7652 4 19.5C4 17.9087 4.63214 16.3826 5.75736 15.2574C6.88258 14.1321 8.4087 13.5 10 13.5C11.5913 13.5 13.1174 14.1321 14.2426 15.2574C15.3679 16.3826 16 17.9087 16 19.5C16 19.7652 16.1054 20.0196 16.2929 20.2071C16.4804 20.3946 16.7348 20.5 17 20.5C17.2652 20.5 17.5196 20.3946 17.7071 20.2071C17.8946 20.0196 18 19.7652 18 19.5C17.9985 17.9633 17.5545 16.4596 16.721 15.1685C15.8875 13.8775 14.6999 12.8539 13.3 12.22ZM10 11.5C9.40666 11.5 8.82664 11.3241 8.33329 10.9944C7.83994 10.6648 7.45542 10.1962 7.22836 9.64805C7.0013 9.09987 6.94189 8.49667 7.05764 7.91473C7.1734 7.33279 7.45912 6.79824 7.87868 6.37868C8.29824 5.95912 8.83279 5.6734 9.41473 5.55764C9.99667 5.44189 10.5999 5.5013 11.1481 5.72836C11.6962 5.95542 12.1648 6.33994 12.4944 6.83329C12.8241 7.32664 13 7.90666 13 8.5C13 9.29565 12.6839 10.0587 12.1213 10.6213C11.5587 11.1839 10.7956 11.5 10 11.5Z"
+                      fill="#F98038"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="kmtvCardBody">
+                <div class="kmtvCardBody_placement">
+                  <div class="kmtvCardBody_placementIcons1">
+                    <h2 class="kmtvCardBody_placementIconsTitle">#1</h2>
+                  </div>
+                  <h2 class="kmtvCardBody_placementTitle">
+                    The Calm meditation app is getting its own celebrity-filled
+                    HBO Max show
+                  </h2>
+                </div>
+                <div class="kmtvCardBody_placement">
+                  <div class="kmtvCardBody_placementIcons2">
+                    <h2 class="kmtvCardBody_placementIconsTitle">#2</h2>
+                  </div>
+                  <h2 class="kmtvCardBody_placementTitle">
+                    The More Important the Work, the More Important the Rest
+                  </h2>
+                </div>
+                <div class="kmtvCardBody_placement">
+                  <div class="kmtvCardBody_placementIcons3">
+                    <h2 class="kmtvCardBody_placementIconsTitle">#3</h2>
+                  </div>
+                  <h2 class="kmtvCardBody_placementTitle">
+                    How to design a product that can grow itself 10x in year
+                  </h2>
+                </div>
+                <a href="#" class="seeMore">Lihat thread lainnya</a>
+              </div>
+            </div>
+            <div class="kmtvCard">
+              <div class="kmtvCardHead">
+                <div class="kmtvCardHeadLeft">
+                  <img
+                    src="./assets/icons/trophy-kmtv2.svg"
+                    alt="trophy-kmtv"
+                  />
+                  <img
+                    src="./assets/img/topic-avatar2.svg"
+                    alt="Brooklyn"
+                    class="kmtvCardHeadLeftImage"
+                  />
+                  <div class="kmtvCardHeadLeftNameAddress">
+                    <h2 class="kmtvCardHeadLeftName">Jane Cooper</h2>
+                    <p class="kmtvCardHeadLeftAddress">Region Bandung</p>
+                  </div>
+                </div>
+                <div class="kmtvCardHeadRight">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 10.5H20V9.5C20 9.23478 19.8946 8.98043 19.7071 8.79289C19.5196 8.60536 19.2652 8.5 19 8.5C18.7348 8.5 18.4804 8.60536 18.2929 8.79289C18.1054 8.98043 18 9.23478 18 9.5V10.5H17C16.7348 10.5 16.4804 10.6054 16.2929 10.7929C16.1054 10.9804 16 11.2348 16 11.5C16 11.7652 16.1054 12.0196 16.2929 12.2071C16.4804 12.3946 16.7348 12.5 17 12.5H18V13.5C18 13.7652 18.1054 14.0196 18.2929 14.2071C18.4804 14.3946 18.7348 14.5 19 14.5C19.2652 14.5 19.5196 14.3946 19.7071 14.2071C19.8946 14.0196 20 13.7652 20 13.5V12.5H21C21.2652 12.5 21.5196 12.3946 21.7071 12.2071C21.8946 12.0196 22 11.7652 22 11.5C22 11.2348 21.8946 10.9804 21.7071 10.7929C21.5196 10.6054 21.2652 10.5 21 10.5ZM13.3 12.22C13.8336 11.7581 14.2616 11.1869 14.5549 10.545C14.8482 9.90316 15 9.20571 15 8.5C15 7.17392 14.4732 5.90215 13.5355 4.96447C12.5979 4.02678 11.3261 3.5 10 3.5C8.67392 3.5 7.40215 4.02678 6.46447 4.96447C5.52678 5.90215 5 7.17392 5 8.5C4.99999 9.20571 5.1518 9.90316 5.44513 10.545C5.73845 11.1869 6.16642 11.7581 6.7 12.22C5.30014 12.8539 4.11247 13.8775 3.27898 15.1685C2.4455 16.4596 2.00147 17.9633 2 19.5C2 19.7652 2.10536 20.0196 2.29289 20.2071C2.48043 20.3946 2.73478 20.5 3 20.5C3.26522 20.5 3.51957 20.3946 3.70711 20.2071C3.89464 20.0196 4 19.7652 4 19.5C4 17.9087 4.63214 16.3826 5.75736 15.2574C6.88258 14.1321 8.4087 13.5 10 13.5C11.5913 13.5 13.1174 14.1321 14.2426 15.2574C15.3679 16.3826 16 17.9087 16 19.5C16 19.7652 16.1054 20.0196 16.2929 20.2071C16.4804 20.3946 16.7348 20.5 17 20.5C17.2652 20.5 17.5196 20.3946 17.7071 20.2071C17.8946 20.0196 18 19.7652 18 19.5C17.9985 17.9633 17.5545 16.4596 16.721 15.1685C15.8875 13.8775 14.6999 12.8539 13.3 12.22ZM10 11.5C9.40666 11.5 8.82664 11.3241 8.33329 10.9944C7.83994 10.6648 7.45542 10.1962 7.22836 9.64805C7.0013 9.09987 6.94189 8.49667 7.05764 7.91473C7.1734 7.33279 7.45912 6.79824 7.87868 6.37868C8.29824 5.95912 8.83279 5.6734 9.41473 5.55764C9.99667 5.44189 10.5999 5.5013 11.1481 5.72836C11.6962 5.95542 12.1648 6.33994 12.4944 6.83329C12.8241 7.32664 13 7.90666 13 8.5C13 9.29565 12.6839 10.0587 12.1213 10.6213C11.5587 11.1839 10.7956 11.5 10 11.5Z"
+                      fill="#F98038"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="kmtvCardBody">
+                <div class="kmtvCardBody_placement">
+                  <div class="kmtvCardBody_placementIcons1">
+                    <h2 class="kmtvCardBody_placementIconsTitle">#1</h2>
+                  </div>
+                  <h2 class="kmtvCardBody_placementTitle">
+                    The More Important the Work, the More Important the Rest
+                  </h2>
+                </div>
+                <div class="kmtvCardBody_placement">
+                  <div class="kmtvCardBody_placementIcons2">
+                    <h2 class="kmtvCardBody_placementIconsTitle">#2</h2>
+                  </div>
+                  <h2 class="kmtvCardBody_placementTitle">
+                    Analysing Potential Problems
+                  </h2>
+                </div>
+                <div class="kmtvCardBody_placement">
+                  <div class="kmtvCardBody_placementIcons3">
+                    <h2 class="kmtvCardBody_placementIconsTitle">#3</h2>
+                  </div>
+                  <h2 class="kmtvCardBody_placementTitle">
+                    Understanding color theory: the color wheel and finding
+                    complementary colors
+                  </h2>
+                </div>
+                <a href="#" class="seeMore">Lihat thread lainnya</a>
+              </div>
+            </div>
+            <div class="ktmtvNextSlide">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.172 12.0001L9.34302 9.17208L10.757 7.75708L15 12.0001L10.757 16.2431L9.34302 14.8281L12.172 12.0001Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="paginate mt-10">
+            <svg
+              width="56"
+              height="8"
+              viewBox="0 0 56 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="4" cy="4" r="4" fill="#00B0E9" />
+              <circle cx="20" cy="4" r="4" fill="#CCEFFB" />
+              <circle cx="36" cy="4" r="4" fill="#CCEFFB" />
+              <circle cx="52" cy="4" r="4" fill="#CCEFFB" />
+            </svg>
+          </div>
+        </div>
+        <!-- KM TV End -->
+      </div>
+      <div class="contentNews_grid2">
+        <!-- Created Button Thread dan Pertanyaan Start -->
+        <button class="createThread">
+          <div class="createThreadIcons">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.276 10.6669L11.0373 3.90555L10.0947 2.96288L3.33333 9.72422V10.6669H4.276ZM4.82867 12.0002H2V9.17155L9.62333 1.54822C9.74835 1.42324 9.91789 1.35303 10.0947 1.35303C10.2714 1.35303 10.441 1.42324 10.566 1.54822L12.452 3.43422C12.577 3.55924 12.6472 3.72878 12.6472 3.90555C12.6472 4.08233 12.577 4.25187 12.452 4.37689L4.82867 12.0002ZM2 13.3336H14V14.6669H2V13.3336Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <h2 class="createThreadTitle">Buat Thread</h2>
+        </button>
+        <button class="createQuestion">
+          <div class="createQuestionIcons">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.84204 11.3333H13.3334V3.33333H2.66671V12.2567L3.84204 11.3333ZM4.30337 12.6667L1.33337 15V2.66667C1.33337 2.48986 1.40361 2.32029 1.52864 2.19526C1.65366 2.07024 1.82323 2 2.00004 2H14C14.1769 2 14.3464 2.07024 14.4714 2.19526C14.5965 2.32029 14.6667 2.48986 14.6667 2.66667V12C14.6667 12.1768 14.5965 12.3464 14.4714 12.4714C14.3464 12.5964 14.1769 12.6667 14 12.6667H4.30337ZM7.33337 9.33333H8.66671V10.6667H7.33337V9.33333ZM5.71137 5.87533C5.79799 5.44186 6.00592 5.0419 6.31097 4.72198C6.61602 4.40207 7.00565 4.17536 7.43451 4.06824C7.86338 3.96112 8.31385 3.97798 8.7335 4.11688C9.15315 4.25577 9.52474 4.51098 9.80501 4.85281C10.0853 5.19464 10.2627 5.60904 10.3167 6.04777C10.3706 6.48651 10.2989 6.93155 10.1098 7.3311C9.9207 7.73065 9.62203 8.0683 9.24853 8.30473C8.87504 8.54117 8.44208 8.66668 8.00004 8.66667H7.33337V7.33333H8.00004C8.18943 7.33332 8.37492 7.27953 8.53492 7.17822C8.69493 7.07691 8.82288 6.93224 8.90389 6.76106C8.98489 6.58987 9.01562 6.3992 8.9925 6.21123C8.96937 6.02326 8.89334 5.84572 8.77326 5.69927C8.65318 5.55283 8.49398 5.44349 8.31419 5.38398C8.13439 5.32447 7.9414 5.31725 7.75766 5.36314C7.57392 5.40903 7.40698 5.50615 7.27629 5.64321C7.14559 5.78027 7.05649 5.95162 7.01937 6.13733L5.71137 5.87533Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <h2 class="createQuestionTitle">Buat Pertanyaan</h2>
+        </button>
+        <!-- Created Button Thread dan Pertanyaan End -->
+
+        <!-- Threads Rekomendasi Start -->
+        <div class="threadRekomen">
+          <div class="threadRekomenHead">
+            <div class="threadRekomenHeadIcons">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.6 7.9999H21C21.5304 7.9999 22.0391 8.21062 22.4142 8.58569C22.7893 8.96076 23 9.46947 23 9.9999V12.1039C23.0003 12.3653 22.9493 12.6241 22.85 12.8659L19.755 20.3809C19.6795 20.5641 19.5513 20.7208 19.3866 20.831C19.2219 20.9412 19.0282 21 18.83 20.9999H2C1.73478 20.9999 1.48043 20.8945 1.29289 20.707C1.10536 20.5195 1 20.2651 1 19.9999V9.9999C1 9.73469 1.10536 9.48033 1.29289 9.2928C1.48043 9.10526 1.73478 8.9999 2 8.9999H5.482C5.6421 8.99994 5.79986 8.96155 5.94203 8.88794C6.0842 8.81433 6.20662 8.70766 6.299 8.5769L11.752 0.849904C11.8209 0.752217 11.9226 0.682464 12.0385 0.653294C12.1545 0.624124 12.277 0.637467 12.384 0.690904L14.198 1.5979C14.7085 1.85307 15.1163 2.27522 15.3537 2.79422C15.5911 3.31322 15.6438 3.89783 15.503 4.4509L14.6 7.9999ZM7 10.5879V18.9999H18.16L21 12.1039V9.9999H14.6C14.2954 9.99986 13.9948 9.93024 13.7212 9.79636C13.4476 9.66248 13.2082 9.46787 13.0213 9.22739C12.8343 8.98691 12.7048 8.7069 12.6425 8.40873C12.5803 8.11056 12.5869 7.80211 12.662 7.5069L13.565 3.9589C13.5933 3.84823 13.5828 3.73122 13.5353 3.62733C13.4878 3.52345 13.4062 3.43895 13.304 3.3879L12.643 3.0579L7.933 9.7299C7.683 10.0839 7.363 10.3739 7 10.5879ZM5 10.9999H3V18.9999H5V10.9999Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <h2 class="threadRekomenHeadTitle">Threads Rekomendasi</h2>
+          </div>
+          <div class="threadRekomenBody">
+            <div class="threadRekomenBody_card">
+              <img src="./assets/img/rekomendasi1.svg" alt="rekomendasi" />
+              <div class="threadRekomenBody_cardForm">
+                <h2 class="threadRekomenBody_cardTitle">Lifestyle</h2>
+                <p class="threadRekomenBody_cardDesc">
+                  How to design a product that can grow itself 10x in year:
+                </p>
+              </div>
+            </div>
+            <hr class="py-4" />
+            <div class="threadRekomenBody_card">
+              <img src="./assets/img/rekomendasi2.svg" alt="rekomendasi" />
+              <div class="threadRekomenBody_cardForm">
+                <h2 class="threadRekomenBody_cardTitle">Lifestyle</h2>
+                <p class="threadRekomenBody_cardDesc">
+                  Analysing Potential Problems
+                </p>
+              </div>
+            </div>
+            <hr class="py-4" />
+            <div class="threadRekomenBody_card">
+              <img src="./assets/img/rekomendasi3.svg" alt="rekomendasi" />
+              <div class="threadRekomenBody_cardForm">
+                <h2 class="threadRekomenBody_cardTitle">Technology</h2>
+                <p class="threadRekomenBody_cardDesc">
+                  Understanding color theory: the color wheel and finding
+                  comple...
+                </p>
+              </div>
+            </div>
+            <hr class="py-4" />
+            <div class="threadRekomenBody_card">
+              <img src="./assets/img/rekomendasi4.svg" alt="rekomendasi" />
+              <div class="threadRekomenBody_cardForm">
+                <h2 class="threadRekomenBody_cardTitle">Works</h2>
+                <p class="threadRekomenBody_cardDesc">
+                  The More Important the Work, the More Important the Rest
+                </p>
+              </div>
+            </div>
+            <hr class="py-4" />
+            <div class="threadRekomenBody_card">
+              <img src="./assets/img/rekomendasi5.svg" alt="rekomendasi" />
+              <div class="threadRekomenBody_cardForm">
+                <h2 class="threadRekomenBody_cardTitle">Industry</h2>
+                <p class="threadRekomenBody_cardDesc">
+                  The Calm meditation app is getting its own celebrity-filled...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Threads Rekomendasi End -->
+
+        <!-- Obrolan Hangat Start -->
+        <div class="chat">
+          <div class="chatHead">
+            <div class="chatHeadIcons">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.29101 20.824L2.00001 22L3.17601 16.709C2.40154 15.2604 1.99754 13.6426 2.00001 12C2.00001 6.477 6.47701 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C10.3574 22.0025 8.73963 21.5985 7.29101 20.824ZM7.58101 18.711L8.23401 19.061C9.39256 19.6801 10.6864 20.0027 12 20C13.5823 20 15.129 19.5308 16.4446 18.6518C17.7602 17.7727 18.7855 16.5233 19.391 15.0615C19.9965 13.5997 20.155 11.9911 19.8463 10.4393C19.5376 8.88743 18.7757 7.46197 17.6569 6.34315C16.538 5.22433 15.1126 4.4624 13.5607 4.15372C12.0089 3.84504 10.4004 4.00346 8.93854 4.60896C7.47674 5.21447 6.22731 6.23984 5.34825 7.55544C4.4692 8.87103 4.00001 10.4177 4.00001 12C4.00001 13.334 4.32501 14.618 4.94001 15.766L5.28901 16.419L4.63401 19.366L7.58101 18.711Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <h2 class="chatHeadTitle">Obrolan Hangat</h2>
+          </div>
+          <div class="chatBody">
+            <div class="chatCard">
+              <div class="chatCardHead">
+                <img
+                  src="./assets/img/eleanorpena.svg"
+                  alt="avatar"
+                  class="chatCardHeadAvatar"
+                />
+                <div class="chatCardHeadNameStatus">
+                  <h2 class="chatCardHeadName">Eleanor Pena</h2>
+                  <p class="chatCardHeadStatus">Mengomentari threads</p>
+                </div>
+              </div>
+              <p class="chatCardBody">
+                How to design a product that can grow itself 10x in year:
+              </p>
+            </div>
+            <hr class="py-4" />
+            <div class="chatCard">
+              <div class="chatCardHead">
+                <img
+                  src="./assets/img/jeromebell.svg"
+                  alt="avatar"
+                  class="chatCardHeadAvatar"
+                />
+                <div class="chatCardHeadNameStatus">
+                  <h2 class="chatCardHeadName">Jerome Bell</h2>
+                  <p class="chatCardHeadStatus">Mengomentari threads</p>
+                </div>
+              </div>
+              <p class="chatCardBody">
+                The Calm meditation app is getting its own celebrity-filled HBO
+                Max show
+              </p>
+            </div>
+            <hr class="py-4" />
+            <div class="chatCard">
+              <div class="chatCardHead">
+                <img
+                  src="./assets/img/codyfisher.svg"
+                  alt="avatar"
+                  class="chatCardHeadAvatar"
+                />
+                <div class="chatCardHeadNameStatus">
+                  <h2 class="chatCardHeadName">Cody Fisher</h2>
+                  <p class="chatCardHeadStatus">Mengomentari threads</p>
+                </div>
+              </div>
+              <p class="chatCardBody">
+                The More Important the Work, the More Important the Rest
+              </p>
+            </div>
+            <hr class="py-4" />
+            <div class="chatCard">
+              <div class="chatCardHead">
+                <img
+                  src="./assets/img/ronaldrichards.svg"
+                  alt="avatar"
+                  class="chatCardHeadAvatar"
+                />
+                <div class="chatCardHeadNameStatus">
+                  <h2 class="chatCardHeadName">Ronald Richards</h2>
+                  <p class="chatCardHeadStatus">Mengomentari threads</p>
+                </div>
+              </div>
+              <p class="chatCardBody">Analysing Potential Problems</p>
+            </div>
+            <hr class="py-4" />
+            <div class="chatCard">
+              <div class="chatCardHead">
+                <img
+                  src="./assets/img/floydmiles.svg"
+                  alt="avatar"
+                  class="chatCardHeadAvatar"
+                />
+                <div class="chatCardHeadNameStatus">
+                  <h2 class="chatCardHeadName">Floyd Miles</h2>
+                  <p class="chatCardHeadStatus">Mengomentari threads</p>
+                </div>
+              </div>
+              <p class="chatCardBody">
+                How to design a product that can grow itself 10x in year:
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Obrolan Hangat End -->
+
+        <!-- Group Populer Start -->
+        <div class="groupPopuler">
+          <div class="groupPopulerHead">
+            <div class="groupPopulerHeadIcons">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 22C2 19.8783 2.84285 17.8434 4.34315 16.3431C5.84344 14.8429 7.87827 14 10 14C12.1217 14 14.1566 14.8429 15.6569 16.3431C17.1571 17.8434 18 19.8783 18 22H16C16 20.4087 15.3679 18.8826 14.2426 17.7574C13.1174 16.6321 11.5913 16 10 16C8.4087 16 6.88258 16.6321 5.75736 17.7574C4.63214 18.8826 4 20.4087 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14 9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10 11ZM18.284 14.703C19.6893 15.3359 20.882 16.3612 21.7186 17.6557C22.5552 18.9502 23.0002 20.4587 23 22H21C21.0002 20.844 20.6666 19.7125 20.0391 18.7416C19.4116 17.7707 18.5171 17.0017 17.463 16.527L18.283 14.703H18.284ZM17.596 3.413C18.6035 3.8283 19.465 4.53354 20.071 5.43923C20.6771 6.34492 21.0004 7.41024 21 8.5C21.0004 9.87233 20.4877 11.1952 19.5625 12.2088C18.6374 13.2224 17.3667 13.8535 16 13.978V11.965C16.7409 11.8589 17.4283 11.518 17.9613 10.9925C18.4943 10.4669 18.8447 9.78432 18.9612 9.04493C19.0776 8.30555 18.954 7.5483 18.6084 6.88435C18.2628 6.22041 17.7134 5.68475 17.041 5.356L17.596 3.413Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <h2 class="groupPopulerHeadTitle">Group Populer</h2>
+          </div>
+          <div class="groupPopulerBody">
+            <div class="groupCard">
+              <div class="groupCardHead">
+                <img
+                  src="./assets/img/group1.svg"
+                  alt="group"
+                  class="groupCardHeadImage"
+                />
+                <div class="groupCardHeadNameMember">
+                  <h2 class="groupCardHeadName">Tech Team</h2>
+                  <p class="groupCardHeadMember">80 members</p>
+                </div>
+              </div>
+              <button class="groupCardBody">Join Group</button>
+            </div>
+            <hr class="py-4" />
+            <div class="groupCard">
+              <div class="groupCardHead">
+                <img
+                  src="./assets/img/group2.svg"
+                  alt="group"
+                  class="groupCardHeadImage"
+                />
+                <div class="groupCardHeadNameMember">
+                  <h2 class="groupCardHeadName">Female Geek</h2>
+                  <p class="groupCardHeadMember">50 members</p>
+                </div>
+              </div>
+              <button class="groupCardBody">Lihat Group</button>
+            </div>
+            <hr class="py-4" />
+            <div class="groupCard">
+              <div class="groupCardHead">
+                <img
+                  src="./assets/img/group3.svg"
+                  alt="group"
+                  class="groupCardHeadImage"
+                />
+                <div class="groupCardHeadNameMember">
+                  <h2 class="groupCardHeadName">Leadership</h2>
+                  <p class="groupCardHeadMember">500 members</p>
+                </div>
+              </div>
+              <button class="groupCardBody">Lihat Group</button>
+            </div>
+          </div>
+        </div>
+        <!-- Group Populer End -->
+      </div>
+    </section>
+    <!-- Content News End -->
+
+    <!-- Footer Start -->
+    <div class="footer">
+      <div class="footerGrid">
+        <div class="footerGrid1">
+          <h2 class="footerGrid1Title">Knowledge Management</h2>
+          <p class="footerGrid1Desc">
+            Proses menciptakan, Membagikan, Menggunakan, dan mengelola suatu
+            pengetahuan dan informasi dari sebuah organisasi
+          </p>
+          <div class="footerGrid1Flex">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.1"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                fill="#222222"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.0007 5.6001C10.2625 5.6001 10.0444 5.6077 9.36174 5.63876C8.6804 5.66997 8.21533 5.77783 7.80839 5.9361C7.38745 6.09957 7.03038 6.31824 6.67464 6.67411C6.31864 7.02985 6.09997 7.38692 5.93597 7.80772C5.7773 8.21479 5.6693 8.68 5.63863 9.36107C5.6081 10.0437 5.6001 10.262 5.6001 12.0002C5.6001 13.7383 5.60783 13.9558 5.63876 14.6385C5.6701 15.3198 5.77797 15.7849 5.9361 16.1918C6.0997 16.6127 6.31837 16.9698 6.67424 17.3256C7.02985 17.6816 7.38692 17.9008 7.80759 18.0642C8.21479 18.2225 8.68 18.3304 9.3612 18.3616C10.0439 18.3926 10.2619 18.4002 11.9999 18.4002C13.7382 18.4002 13.9557 18.3926 14.6383 18.3616C15.3197 18.3304 15.7853 18.2225 16.1925 18.0642C16.6133 17.9008 16.9698 17.6816 17.3254 17.3256C17.6814 16.9698 17.9001 16.6127 18.0641 16.1919C18.2214 15.7849 18.3294 15.3197 18.3614 14.6386C18.3921 13.9559 18.4001 13.7383 18.4001 12.0002C18.4001 10.262 18.3921 10.0439 18.3614 9.3612C18.3294 8.67986 18.2214 8.21479 18.0641 7.80785C17.9001 7.38692 17.6814 7.02985 17.3254 6.67411C16.9694 6.31811 16.6134 6.09944 16.1921 5.9361C15.7841 5.77783 15.3187 5.66997 14.6374 5.63876C13.9547 5.6077 13.7374 5.6001 11.9987 5.6001H12.0007ZM11.4265 6.75343C11.5969 6.75316 11.7871 6.75343 12.0007 6.75343C13.7095 6.75343 13.912 6.75956 14.5868 6.79023C15.2108 6.81876 15.5495 6.92303 15.7751 7.01063C16.0738 7.12663 16.2867 7.2653 16.5106 7.4893C16.7346 7.7133 16.8733 7.92664 16.9895 8.22531C17.0771 8.45064 17.1815 8.78931 17.2099 9.41332C17.2406 10.088 17.2473 10.2907 17.2473 11.9987C17.2473 13.7067 17.2406 13.9094 17.2099 14.584C17.1814 15.208 17.0771 15.5467 16.9895 15.7721C16.8735 16.0707 16.7346 16.2834 16.5106 16.5073C16.2866 16.7313 16.0739 16.8699 15.7751 16.9859C15.5498 17.0739 15.2108 17.1779 14.5868 17.2065C13.9122 17.2371 13.7095 17.2438 12.0007 17.2438C10.2917 17.2438 10.0892 17.2371 9.41451 17.2065C8.7905 17.1777 8.45183 17.0734 8.2261 16.9858C7.92743 16.8698 7.71409 16.7311 7.49009 16.5071C7.26609 16.2831 7.12742 16.0703 7.01115 15.7715C6.92355 15.5462 6.81915 15.2075 6.79075 14.5835C6.76008 13.9088 6.75395 13.7062 6.75395 11.9971C6.75395 10.288 6.76008 10.0864 6.79075 9.41172C6.81928 8.78771 6.92355 8.44904 7.01115 8.22344C7.12715 7.92477 7.26609 7.71143 7.49009 7.48743C7.71409 7.26343 7.92743 7.12476 8.2261 7.00849C8.4517 6.92049 8.7905 6.81649 9.41451 6.78783C10.0049 6.76116 10.2337 6.75316 11.4265 6.75182V6.75343ZM15.417 7.81611C14.993 7.81611 14.649 8.15971 14.649 8.58385C14.649 9.00785 14.993 9.35185 15.417 9.35185C15.841 9.35185 16.185 9.00785 16.185 8.58385C16.185 8.15984 15.841 7.81611 15.417 7.81611ZM12.0007 8.71345C10.1856 8.71345 8.71401 10.1851 8.71401 12.0001C8.71401 13.8152 10.1856 15.2862 12.0007 15.2862C13.8158 15.2862 15.2869 13.8152 15.2869 12.0001C15.2869 10.1851 13.8158 8.71345 12.0007 8.71345ZM12.0007 9.86679C13.1788 9.86679 14.134 10.8219 14.134 12.0001C14.134 13.1783 13.1788 14.1335 12.0007 14.1335C10.8224 14.1335 9.86733 13.1783 9.86733 12.0001C9.86733 10.8219 10.8224 9.86679 12.0007 9.86679Z"
+                fill="#0084F4"
+              />
+            </svg>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.1"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                fill="#222222"
+              />
+              <path
+                d="M17.3333 6H6.66667C6.48986 6 6.32029 6.07024 6.19526 6.19526C6.07024 6.32029 6 6.48986 6 6.66667V17.3333C6 17.5101 6.07024 17.6797 6.19526 17.8047C6.32029 17.9298 6.48986 18 6.66667 18H12.41V13.36H10.8513V11.5433H12.41V10.21C12.41 8.66 13.3567 7.81533 14.7433 7.81533C15.2093 7.814 15.676 7.838 16.14 7.88667V9.5H15.1833C14.4313 9.5 14.2847 9.85867 14.2847 10.3833V11.54H16.0827L15.8493 13.3567H14.284V18H17.3333C17.5101 18 17.6797 17.9298 17.8047 17.8047C17.9298 17.6797 18 17.5101 18 17.3333V6.66667C18 6.48986 17.9298 6.32029 17.8047 6.19526C17.6797 6.07024 17.5101 6 17.3333 6Z"
+                fill="#0084F4"
+              />
+            </svg>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.1"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                fill="#222222"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.6406 9.7537L11.6658 10.1689L11.2461 10.1181C9.71843 9.92318 8.38383 9.26221 7.25067 8.15211L6.69668 7.6013L6.55399 8.00805C6.25181 8.91477 6.44487 9.87234 7.0744 10.5164C7.41015 10.8723 7.33461 10.9231 6.75544 10.7113C6.55399 10.6435 6.37772 10.5926 6.36093 10.6181C6.30218 10.6774 6.50363 11.4485 6.66311 11.7536C6.88134 12.1773 7.32621 12.5925 7.81305 12.8382L8.22434 13.0331L7.73751 13.0416C7.26746 13.0416 7.25067 13.0501 7.30103 13.2281C7.46891 13.7789 8.13201 14.3636 8.87066 14.6178L9.39108 14.7957L8.93781 15.0669C8.26631 15.4567 7.4773 15.677 6.68829 15.694C6.31057 15.7025 6 15.7364 6 15.7618C6 15.8465 7.02404 16.3211 7.61999 16.5075C9.40786 17.0583 11.5315 16.821 13.1263 15.8804C14.2595 15.211 15.3926 13.8806 15.9214 12.5925C16.2068 11.9061 16.4922 10.6519 16.4922 10.0503C16.4922 9.66049 16.5174 9.60964 16.9874 9.14357C17.2644 8.8724 17.5246 8.57581 17.575 8.49107C17.6589 8.33007 17.6505 8.33007 17.2224 8.47412C16.509 8.72834 16.4083 8.69445 16.7608 8.31312C17.021 8.04195 17.3316 7.55046 17.3316 7.4064C17.3316 7.38098 17.2057 7.42335 17.063 7.49961C16.9119 7.58435 16.5761 7.71146 16.3243 7.78773L15.8711 7.93179L15.4598 7.65214C15.2331 7.49961 14.9142 7.33013 14.7463 7.27929C14.3182 7.16065 13.6635 7.1776 13.2774 7.31318C12.2282 7.69451 11.5651 8.6775 11.6406 9.7537Z"
+                fill="#0084F4"
+              />
+            </svg>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.1"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                fill="#222222"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17.0009 7.87476C17.5517 8.02589 17.9854 8.4712 18.1326 9.03671C18.4001 10.0616 18.4001 12.2001 18.4001 12.2001C18.4001 12.2001 18.4001 14.3385 18.1326 15.3635C17.9854 15.929 17.5517 16.3743 17.0009 16.5255C16.0028 16.8001 12.0001 16.8001 12.0001 16.8001C12.0001 16.8001 7.99741 16.8001 6.99923 16.5255C6.44846 16.3743 6.01472 15.929 5.86752 15.3635C5.6001 14.3385 5.6001 12.2001 5.6001 12.2001C5.6001 12.2001 5.6001 10.0616 5.86752 9.03671C6.01472 8.4712 6.44846 8.02589 6.99923 7.87476C7.99741 7.6001 12.0001 7.6001 12.0001 7.6001C12.0001 7.6001 16.0028 7.6001 17.0009 7.87476ZM10.8001 10.4001V14.4001L14.0001 12.4001L10.8001 10.4001Z"
+                fill="#0084F4"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="footerGrid2">
+          <h2 class="footerGrid2Title">Explore</h2>
+          <div class="footerGrid2Flex">
+            <a href="#" class="footerGrid2Link">Knowledge Sharing</a>
+            <a href="#" class="footerGrid2Link">Social Media</a>
+            <a href="#" class="footerGrid2Link">Hot News</a>
+            <a href="#" class="footerGrid2Link">KM Maps</a>
+            <a href="#" class="footerGrid2Link">Prosedur</a>
+            <a href="#" class="footerGrid2Link">Bookmark</a>
+            <a href="#" class="footerGrid2Link">Libarary</a>
+          </div>
+        </div>
+        <div class="footerGrid3">
+          <h2 class="footerGrid3Title">Help Centre</h2>
+          <div class="footerGrid3Flex">
+            <a href="#" class="footerGrid3Link">Term Condition</a>
+            <a href="#" class="footerGrid3Link">Privacy Policy</a>
+            <a href="#" class="footerGrid3Link">Term of use</a>
+            <a href="#" class="footerGrid3Link">FAQ</a>
+          </div>
+        </div>
+        <div class="footerGrid4">
+          <h2 class="footerGrid4Title">Contact Us</h2>
+          <div class="footerGrid4Flex">
+            <div class="footerGrid4Flex2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 23.7279L5.636 17.3639C4.37734 16.1052 3.52019 14.5016 3.17293 12.7558C2.82567 11.0099 3.00391 9.20035 3.6851 7.55582C4.36629 5.91129 5.51984 4.50569 6.99988 3.51677C8.47992 2.52784 10.22 2 12 2C13.78 2 15.5201 2.52784 17.0001 3.51677C18.4802 4.50569 19.6337 5.91129 20.3149 7.55582C20.9961 9.20035 21.1743 11.0099 20.8271 12.7558C20.4798 14.5016 19.6227 16.1052 18.364 17.3639L12 23.7279ZM16.95 15.9499C17.9289 14.9709 18.5955 13.7236 18.8656 12.3658C19.1356 11.0079 18.9969 9.60052 18.4671 8.32148C17.9373 7.04244 17.04 5.94923 15.8889 5.18009C14.7378 4.41095 13.3844 4.00043 12 4.00043C10.6156 4.00043 9.26222 4.41095 8.11109 5.18009C6.95996 5.94923 6.06275 7.04244 5.53292 8.32148C5.00308 9.60052 4.86442 11.0079 5.13445 12.3658C5.40449 13.7236 6.07111 14.9709 7.05 15.9499L12 20.8999L16.95 15.9499ZM12 12.9999C11.4696 12.9999 10.9609 12.7892 10.5858 12.4141C10.2107 12.0391 10 11.5304 10 10.9999C10 10.4695 10.2107 9.96078 10.5858 9.58571C10.9609 9.21064 11.4696 8.99992 12 8.99992C12.5304 8.99992 13.0391 9.21064 13.4142 9.58571C13.7893 9.96078 14 10.4695 14 10.9999C14 11.5304 13.7893 12.0391 13.4142 12.4141C13.0391 12.7892 12.5304 12.9999 12 12.9999Z"
+                  fill="#00B0E9"
+                />
+              </svg>
+              <h2 class="footerGrid4Link">
+                PT WIJAYA KARYA (Persero) Tbk. Jl. D.I Panjaitan Kav. 9-10,
+                Jakarta 13340
+              </h2>
+            </div>
+            <div class="footerGrid4Flex2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.4401 13.0001C19.2201 13.0001 18.9901 12.9301 18.7701 12.8801C18.3246 12.7819 17.8868 12.6516 17.4601 12.4901C16.9962 12.3213 16.4862 12.3301 16.0284 12.5147C15.5706 12.6993 15.1972 13.0467 14.9801 13.4901L14.7601 13.9401C13.7861 13.3983 12.8911 12.7253 12.1001 11.9401C11.3149 11.1491 10.6419 10.2541 10.1001 9.28011L10.5201 9.00011C10.9635 8.78303 11.3109 8.40964 11.4955 7.9518C11.6801 7.49396 11.6889 6.98402 11.5201 6.52011C11.3613 6.09253 11.231 5.65491 11.1301 5.21011C11.0801 4.99011 11.0401 4.76011 11.0101 4.53011C10.8887 3.82573 10.5197 3.18785 9.96972 2.73135C9.41972 2.27485 8.7248 2.02972 8.0101 2.04011H5.0101C4.57913 2.03607 4.15235 2.12493 3.75881 2.30064C3.36527 2.47636 3.01421 2.73481 2.72953 3.05839C2.44485 3.38198 2.23324 3.76311 2.10909 4.17583C1.98494 4.58855 1.95118 5.02317 2.0101 5.45011C2.54284 9.63949 4.45613 13.532 7.44775 16.5127C10.4394 19.4935 14.3388 21.3926 18.5301 21.9101H18.9101C19.6475 21.9112 20.3595 21.6406 20.9101 21.1501C21.2265 20.8672 21.4792 20.5203 21.6516 20.1324C21.8239 19.7446 21.9121 19.3245 21.9101 18.9001V15.9001C21.8979 15.2055 21.6449 14.5367 21.1944 14.0078C20.744 13.4789 20.1239 13.1227 19.4401 13.0001ZM19.9401 19.0001C19.9399 19.1421 19.9095 19.2824 19.8509 19.4117C19.7923 19.5411 19.7068 19.6564 19.6001 19.7501C19.4887 19.8471 19.3581 19.9195 19.2168 19.9626C19.0755 20.0057 18.9267 20.0185 18.7801 20.0001C15.035 19.5199 11.5563 17.8066 8.89282 15.1304C6.2293 12.4542 4.53251 8.96745 4.0701 5.22011C4.05419 5.07363 4.06813 4.92544 4.1111 4.7845C4.15407 4.64356 4.22517 4.5128 4.3201 4.40011C4.41381 4.29344 4.52916 4.20795 4.65848 4.14933C4.7878 4.09071 4.92812 4.06029 5.0701 4.06011H8.0701C8.30265 4.05494 8.52972 4.13099 8.71224 4.27518C8.89476 4.41937 9.02131 4.62268 9.0701 4.85011C9.1101 5.12345 9.1601 5.39345 9.2201 5.66011C9.33562 6.18726 9.48936 6.70529 9.6801 7.21011L8.2801 7.86011C8.1604 7.91503 8.05272 7.99306 7.96326 8.08971C7.87379 8.18636 7.8043 8.29973 7.75877 8.42331C7.71324 8.54689 7.69257 8.67824 7.69795 8.80983C7.70332 8.94142 7.73464 9.07066 7.7901 9.19011C9.2293 12.2729 11.7073 14.7509 14.7901 16.1901C15.0336 16.2901 15.3066 16.2901 15.5501 16.1901C15.6748 16.1455 15.7894 16.0766 15.8873 15.9873C15.9851 15.898 16.0643 15.7902 16.1201 15.6701L16.7401 14.2701C17.2571 14.455 17.7847 14.6086 18.3201 14.7301C18.5868 14.7901 18.8568 14.8401 19.1301 14.8801C19.3575 14.9289 19.5608 15.0554 19.705 15.238C19.8492 15.4205 19.9253 15.6476 19.9201 15.8801L19.9401 19.0001Z"
+                  fill="#00B0E9"
+                />
+              </svg>
+              <h2 class="footerGrid4Link">+6221 8067 9200</h2>
+            </div>
+            <div class="footerGrid4Flex2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 3.75V7.5H7.5V6H3V19.5H4.5V20.25C4.5 21.4837 5.51625 22.5 6.75 22.5C7.98375 22.5 9 21.4837 9 20.25V19.5H21V7.5H18V3.75H9ZM10.5 5.25H16.5V9H10.5V5.25ZM4.5 7.5H6V18H4.5V7.5ZM7.5 9H9V10.5H18V9H19.5V18H7.5V9ZM9.75 12V13.5H11.25V12H9.75ZM12.75 12V13.5H14.25V12H12.75ZM15.75 12V13.5H17.25V12H15.75ZM9.75 15V16.5H11.25V15H9.75ZM12.75 15V16.5H14.25V15H12.75ZM15.75 15V16.5H17.25V15H15.75ZM6 19.5H7.5V20.25C7.5 20.6663 7.16625 21 6.75 21C6.33375 21 6 20.6663 6 20.25V19.5Z"
+                  fill="#00B0E9"
+                />
+              </svg>
+              <h2 class="footerGrid4Link">+6221 2289 3830</h2>
+            </div>
+            <div class="footerGrid4Flex2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 4H5C4.20435 4 3.44129 4.31607 2.87868 4.87868C2.31607 5.44129 2 6.20435 2 7V17C2 17.7956 2.31607 18.5587 2.87868 19.1213C3.44129 19.6839 4.20435 20 5 20H19C19.7956 20 20.5587 19.6839 21.1213 19.1213C21.6839 18.5587 22 17.7956 22 17V7C22 6.20435 21.6839 5.44129 21.1213 4.87868C20.5587 4.31607 19.7956 4 19 4ZM18.59 6L12.71 11.88C12.617 11.9737 12.5064 12.0481 12.3846 12.0989C12.2627 12.1497 12.132 12.1758 12 12.1758C11.868 12.1758 11.7373 12.1497 11.6154 12.0989C11.4936 12.0481 11.383 11.9737 11.29 11.88L5.41 6H18.59ZM20 17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H5C4.73478 18 4.48043 17.8946 4.29289 17.7071C4.10536 17.5196 4 17.2652 4 17V7.41L9.88 13.29C10.4425 13.8518 11.205 14.1674 12 14.1674C12.795 14.1674 13.5575 13.8518 14.12 13.29L20 7.41V17Z"
+                  fill="#00B0E9"
+                />
+              </svg>
+              <h2 class="footerGrid4Link">humas@wika.co.id</h2>
+            </div>
+            <div class="footerGrid4Flex2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.41 8.63988V8.58988C20.7053 6.6661 19.4269 5.00516 17.7474 3.83174C16.068 2.65832 14.0687 2.02905 12.02 2.02905C9.9712 2.02905 7.97189 2.65832 6.29246 3.83174C4.61304 5.00516 3.33455 6.6661 2.62995 8.58988V8.63988C1.84308 10.8108 1.84308 13.189 2.62995 15.3599V15.4099C3.33455 17.3337 4.61304 18.9946 6.29246 20.168C7.97189 21.3414 9.9712 21.9707 12.02 21.9707C14.0687 21.9707 16.068 21.3414 17.7474 20.168C19.4269 18.9946 20.7053 17.3337 21.41 15.4099V15.3599C22.1968 13.189 22.1968 10.8108 21.41 8.63988ZM4.25995 13.9999C3.91318 12.6891 3.91318 11.3107 4.25995 9.99988H6.11995C5.95998 11.3284 5.95998 12.6713 6.11995 13.9999H4.25995ZM5.07995 15.9999H6.47995C6.71467 16.8917 7.05016 17.7539 7.47995 18.5699C6.49925 17.9018 5.67945 17.0239 5.07995 15.9999ZM6.47995 7.99988H5.07995C5.67082 6.97897 6.48014 6.10135 7.44995 5.42988C7.03051 6.24713 6.70509 7.1093 6.47995 7.99988ZM11 19.6999C9.77172 18.7986 8.9091 17.4851 8.56995 15.9999H11V19.6999ZM11 13.9999H8.13995C7.95334 12.6731 7.95334 11.3267 8.13995 9.99988H11V13.9999ZM11 7.99988H8.56995C8.9091 6.51465 9.77172 5.2012 11 4.29988V7.99988ZM18.92 7.99988H17.52C17.2852 7.10804 16.9497 6.24582 16.52 5.42988C17.5007 6.09795 18.3205 6.97582 18.92 7.99988ZM13 4.29988C14.2282 5.2012 15.0908 6.51465 15.43 7.99988H13V4.29988ZM13 19.6999V15.9999H15.43C15.0908 17.4851 14.2282 18.7986 13 19.6999ZM15.86 13.9999H13V9.99988H15.86C16.0466 11.3267 16.0466 12.6731 15.86 13.9999ZM16.55 18.5699C16.9797 17.7539 17.3152 16.8917 17.55 15.9999H18.95C18.3505 17.0239 17.5307 17.9018 16.55 18.5699ZM19.74 13.9999H17.88C17.9613 13.3363 18.0014 12.6684 18 11.9999C18.0011 11.3314 17.961 10.6635 17.88 9.99988H19.74C20.0867 11.3107 20.0867 12.6891 19.74 13.9999Z"
+                  fill="#00B0E9"
+                />
+              </svg>
+              <h2 class="footerGrid4Link">https://www.wika.co.id</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <h2 class="copyrightTitle">© Wika 2021. Hak cipta dilindungi</h2>
+        <h2 class="copyrightTitle">English | Indonesia</h2>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <script src="./js/style.js"></script>
+  </body>
+</html>

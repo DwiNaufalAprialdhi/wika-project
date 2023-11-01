@@ -60,6 +60,8 @@
         @apply lg:hidden text-sm font-medium leading-6 hover:text-primary1 md:text-center;
     }
 
+    /* Page 1 Start */
+
     /* Head Profile Class */
     .headProfile {
         @apply w-full pt-[120px] lg:px-[108px] md:px-12 sm:px-4 px-4 mx-auto pb-9;
@@ -374,6 +376,393 @@
             .activityCardBodyTitle3 {
                 @apply text-base text-neutral_black2 font-normal leading-7;
             }
+    /* Page 1 End */
+
+    /* Page 2 Start */
+
+    /* Hot Topic Class */
+    .hotTopic {
+        @apply pt-[124px] pb-11 xl:px-[108px] lg:px-14 md:px-12 sm:px-4 px-4 mx-auto w-full;
+    }
+    .hotTopicHead {
+        @apply flex justify-between items-center pb-7;
+    }
+        .hotTopicHead_left{
+            @apply flex items-center gap-4;
+        }
+        .hotTopicHead_leftTitle {
+            @apply md:text-2xl sm:text-base text-sm font-bold leading-8;
+        }
+        .hotTopicHead_right {
+            @apply py-2 px-[14px] bg-accet3 text-accet1 rounded-full md:text-sm sm:text-xs text-[10px] font-bold leading-5 hover:scale-105 duration-300;
+        }
+    .hotTopicBody {
+        @apply grid grid-cols-12  justify-center items-center gap-6 w-full;
+    }
+        .hotTopicCard {
+            @apply rounded-2xl overflow-hidden relative w-full bg-black lg:col-span-3 md:col-span-6 sm:col-span-12 col-span-12 cursor-pointer hover:scale-105 duration-300;
+        }
+        .hotTopicCardImg {
+            @apply object-cover w-full h-auto scale-105 brightness-50 shadow-inner;
+        }
+        .hotTopicCardBody {
+            @apply flex flex-col gap-2 absolute bottom-4 left-4;
+        }
+        .hotTopicCardBodyTitle {
+            @apply max-w-[247px] text-base font-bold leading-6 text-neutral_white;
+        }
+        .hotTopicCardBodyAvatar {
+            @apply flex gap-2 items-center;
+        }
+        .hotTopicCardBodyName {
+            @apply text-neutral_white text-sm font-normal leading-5;
+        }
+
+    /* Content News Class */
+    .contentNews {
+        @apply xl:px-[108px] lg:px-14 md:px-12 sm:px-4 px-4 mx-auto w-full grid grid-cols-12 gap-6 lg:pb-[0px] md:pb-[50px] pb-[300px] ;
+    }
+        .contentNews_grid1 {
+            @apply lg:col-span-8 md:col-span-6 sm:col-span-12 col-span-12 w-full;
+        }
+            /* Hot Threads Class */
+            .thread {
+                @apply w-full mb-[68px];
+            }
+            .threadFlex1 {
+                @apply flex items-center gap-4 pb-7;
+            }
+                .threadTitle {
+                    @apply md:text-2xl sm:text-base text-sm font-bold leading-8;
+                }
+            .threadFlex2 {
+                @apply flex flex-col gap-6;
+            }
+                .threadCard {
+                    @apply p-6 bg-neutral_white rounded-2xl border-b-4 border-semantic_error1 flex flex-col gap-6;
+                }
+                .threadCard_head {
+                    @apply flex items-center justify-between;
+                }
+                    .threadCard_headLeft {
+                        @apply flex gap-4 items-center;
+                    }
+                    .threadCard_NameDate {
+                        @apply flex flex-col gap-1;
+                    }
+                    .threadCard_name {
+                        @apply text-sm font-normal leading-5 text-neutral_black2;
+                    }
+                    .threadCard_date {
+                        @apply text-xs font-normal leading-4 text-neutral_gray1;
+                    }
+                .threadCard_body {
+                    @apply flex lg:flex-row md:flex-col sm:flex-col flex-col gap-6 items-center;
+                }
+                    .threadCard_bodyImg {
+                        @apply w-[223px] h-auto object-cover;
+                    }
+                    .threadCard_bodyForm {
+                        @apply flex flex-col gap-2;
+                    }
+                    .threadCard_bodyTitle {
+                        @apply text-accet1 lg:text-sm md:text-xs text-[10px] font-medium leading-5;
+                    }
+                    .threadCard_bodySubject {
+                        @apply lg:text-base md:text-sm text-xs font-normal leading-7;
+                    }
+                    .threadCard_bodyDesc {
+                        @apply text-neutral_black2 lg:text-base md:text-sm text-xs font-normal leading-7 pt-[2px];
+                    }
+                    .threadCard_bodyFiture {
+                        @apply flex justify-between items-center pt-[10px];
+                    }
+                    .threadCard_bodyFitureLeft {
+                        @apply flex gap-4;
+                    }
+                    .threadCard_bodyFitureContent {
+                        @apply rounded-full py-2 px-[14px] bg-neutral_gray3 flex gap-2 cursor-pointer hover:scale-105 duration-300;
+                    }
+                    .threadCard_bodyFitureTitle {
+                        @apply hidden lg:block text-sm font-normal leading-5 text-neutral_black2;
+                    }
+                    .seeAll {
+                        @apply block self-center bg-accet3 text-accet1 py-2 px-6 rounded-full text-sm font-bold leading-5 max-w-[216px] hover:scale-105 duration-300;
+                    }
+
+            /* Pertanyaan Class */
+            .question {
+                @apply w-full mb-[52px] flex flex-col gap-7;
+            }
+            .questionHead {
+                @apply flex gap-4 items-center;
+            }
+                .questionHeadIcons {
+                    @apply bg-[#8F76EC] p-2 text-neutral_white rounded-full;
+                }
+                .questionHeadTitle {
+                    @apply md:text-2xl sm:text-base text-sm font-bold leading-8;
+                }
+            .questionBody {
+                @apply grid grid-cols-8 gap-6 w-full relative;
+            }
+                .questionCard {
+                    @apply lg:col-span-4 md:col-span-8 sm:col-span-12 col-span-12 p-6 bg-neutral_white rounded-2xl border-b-4 border-[#8F76EC] flex flex-col gap-6;
+                }
+                .questionCardHead {
+                    @apply flex gap-4 items-center;
+                }
+                .questionCardNameDate {
+                    @apply flex flex-col gap-1;
+                }
+                .questionCardName {
+                    @apply text-sm font-normal leading-5 text-neutral_black2;
+                }
+                .questionCardDate {
+                    @apply text-xs font-normal leading-4 text-neutral_gray1;
+                }
+                .questionCardBody {
+                    @apply flex flex-col gap-2;
+                }
+                .questionCardBodyTitle {
+                    @apply text-accet1 text-sm font-medium leading-5;
+                }
+                .questionCardBodyDesc {
+                    @apply text-base font-medium leading-6;
+                }
+                .questionFiture {
+                    @apply flex items-center justify-between mt-6;
+                }
+                .questionFitureAnswer {
+                    @apply flex gap-2 items-center text-sm font-normal leading-5 bg-[#F8F8F8] rounded-full py-2 px-[14px] text-neutral_black2;
+                }
+                .questionFitureMissed {
+                    @apply bg-semantic_success3 py-2 px-[14px] text-semantic_success1 rounded-full text-sm font-normal leading-5;
+                }
+                .questionNextSlide {
+                    @apply absolute lg:block md:hidden sm:hidden hidden -right-5 bottom-1/2 bg-neutral_white p-2 rounded-full text-accet1 drop-shadow-2xl cursor-pointer hover:scale-105 duration-300 z-10;
+                }
+                .paginate {
+                    @apply  self-center max-w-[216px] cursor-pointer mb-10;
+                }
+
+            /* KM TV Class */
+            .kmtv {
+                @apply w-full flex flex-col gap-6;
+            }
+            .kmtvHead {
+                @apply p-6 bg-neutral_white rounded-2xl border-b-4 border-accet1 relative flex lg:flex-row md:flex-col sm:flex-col flex-col gap-6 items-center;
+            }
+                .kmtvHeadImg {
+                    @apply w-[306px] h-auto object-cover brightness-50 shadow-inner;
+                }
+                .kmtvHeadIcons {
+                    @apply absolute lg:bottom-24 lg:left-36 md:top-24 md:left-36 sm:top-24 sm:left-36 md:block hidden cursor-pointer hover:scale-105 duration-300;
+                }
+                .kmtvHeadForm {
+                    @apply flex flex-col gap-3;
+                }
+                .kmtvHeadFormTitle {
+                    @apply text-base font-normal leading-7;
+                }
+                .kmtvHeadFormDesc {
+                    @apply text-base font-normal leading-7 text-neutral_black2
+                }
+                .kmtvHeadFiture {
+                    @apply flex items-center justify-between mt-5;
+                }
+                .kmtvHeadFitureContent {
+                    @apply flex gap-2 items-center bg-[#F8F8F8] rounded-full py-2 px-[14px];
+                }
+                .kmtvHeadFitureTitle {
+                    @apply text-sm text-neutral_black2 font-normal leading-5;
+                }
+            .kmtvBody {
+                @apply w-full bg-primary3 p-8 flex flex-col gap-[38px] rounded-2xl mt-6 relative overflow-hidden;
+            }
+                .kmtvBodyIcons {
+                    @apply w-12 h-12;
+                }
+                .kmtvBodyTitle {
+                    @apply text-2xl font-bold leading-8 text-semantic_information1;
+                }
+                .kmtvBodyImage {
+                    @apply lg:block md:hidden hidden w-[310px] h-auto object-cover absolute right-0 bottom-0;
+                }
+            .kmtvFooter {
+                @apply grid grid-cols-8 gap-6 w-full relative;
+            }
+                .kmtvCard {
+                    @apply bg-neutral_white rounded-2xl p-6 border-secondary1 border-b-4 lg:col-span-4 md:col-span-8 sm:col-span-8 col-span-8 flex flex-col gap-8;
+                }
+                .kmtvCardHead {
+                    @apply flex items-center justify-between;
+                }
+                    .kmtvCardHeadLeft {
+                        @apply flex items-center gap-5
+                    }
+                    .kmtvCardHeadLeftImage {
+                        @apply h-12 w-12 object-cover;
+                    }
+                    .kmtvCardHeadLeftNameAddress {
+                        @apply flex flex-col gap-1;
+                    }
+                    .kmtvCardHeadLeftName {
+                        @apply text-sm font-normal leading-5;
+                    }
+                    .kmtvCardHeadLeftAddress {
+                        @apply text-neutral_gray1 text-xs font-normal leading-4;
+                    }
+                .kmtvCardBody {
+                    @apply flex flex-col gap-4;
+                }
+                    .kmtvCardBody_placement {
+                        @apply flex items-center gap-4 w-full;
+                    }
+                    .kmtvCardBody_placementIcons1 {
+                        @apply py-2 px-3 bg-semantic_warning3 text-semantic_warning1 rounded-full;
+                    }
+                    .kmtvCardBody_placementIconsTitle {
+                        @apply text-base font-bold leading-6;
+                    }
+                    .kmtvCardBody_placementIcons2 {
+                        @apply py-2 px-3 bg-secondary3 text-secondary1 rounded-full;
+                    }
+                    .kmtvCardBody_placementIcons3 {
+                        @apply py-2 px-3 bg-semantic_error3 text-semantic_error1 rounded-full;
+                    }
+                    .seeMore {
+                        @apply text-sm font-medium leading-5 mt-4 text-accet1;
+                    }
+                    .ktmtvNextSlide {
+                        @apply absolute lg:block md:hidden sm:hidden hidden -right-5 bottom-1/2 bg-neutral_white p-2 rounded-full text-accet1 drop-shadow-2xl cursor-pointer hover:scale-105 duration-300 z-10;
+                    }
+                    
+
+        .contentNews_grid2 {
+            @apply lg:col-span-4 md:col-span-6 sm:col-span-12 col-span-12 w-full;
+        }
+            /* Button Create Thread Class */
+            .createThread {
+                @apply bg-accet3 rounded-2xl p-6 w-full flex items-center gap-2 mb-5 hover:scale-105 duration-300;
+            }
+            .createThreadIcons {
+                @apply text-neutral_white bg-accet1 p-2 rounded-full;
+            }
+            .createThreadTitle {
+                @apply lg:text-2xl md:text-lg sm:text-base text-sm font-bold leading-8 text-accet1;
+            }
+
+            /* Button Create Question Class */
+            .createQuestion {
+                @apply bg-accet3 rounded-2xl p-6 w-full flex items-center gap-2 mb-[60px] hover:scale-105 duration-300;
+            }
+            .createQuestionIcons {
+                @apply text-neutral_white bg-accet1 p-2 rounded-full;
+            }
+            .createQuestionTitle {
+                @apply lg:text-2xl md:text-lg sm:text-base text-sm font-bold leading-8 text-accet1;
+            }
+
+            /* Threads Recomended Class */
+            .threadRekomen {
+                @apply flex flex-col gap-7 mb-[52px] w-full;
+            }
+            .threadRekomenHead {
+                @apply flex gap-4 items-center;
+            }
+                .threadRekomenHeadIcons {
+                    @apply bg-secondary1 p-2 text-neutral_white rounded-full;
+                }
+                .threadRekomenHeadTitle {
+                    @apply md:text-2xl sm:text-base text-sm font-bold leading-8;
+                }
+            .threadRekomenBody {
+                @apply p-6 bg-neutral_white rounded-2xl border-b-4 border-secondary1 flex flex-col gap-4;
+            }
+                .threadRekomenBody_card {
+                    @apply flex gap-4 items-center
+                }
+                .threadRekomenBody_cardForm {
+                    @apply flex flex-col gap-1;
+                }
+                .threadRekomenBody_cardTitle {
+                    @apply text-accet1 text-sm font-medium leading-5;
+                }
+                .threadRekomenBody_cardDesc {
+                    @apply text-base font-normal leading-7;
+                }
+
+            /* Obrolan Hangat Class */
+            .chat {
+                @apply flex flex-col gap-7 mb-[52px] w-full;
+            }
+            .chatHead {
+                @apply flex gap-4 items-center;
+                }
+                .chatHeadIcons {
+                    @apply bg-semantic_success1 p-2 text-neutral_white rounded-full;
+                }
+                .chatHeadTitle {
+                    @apply md:text-2xl sm:text-base text-sm font-bold leading-8;
+                }
+            .chatBody {
+                @apply p-6 bg-neutral_white rounded-2xl border-b-4 border-semantic_success1 flex flex-col gap-4;
+            }
+                .chatCard {
+                    @apply flex flex-col gap-2;
+                }
+                .chatCardHead {
+                    @apply flex gap-4 items-center;
+                }
+                .chatCardHeadNameStatus {
+                    @apply flex flex-col gap-1;
+                }
+                .chatCardHeadName {
+                    @apply text-sm font-normal leading-5 text-neutral_black2;
+                }
+                .chatCardHeadStatus {
+                    @apply text-neutral_gray1 text-xs font-normal leading-4;
+                }
+                .chatCardBody {
+                    @apply text-base font-normal leading-7;
+                }
+            
+            /* Group Populer Class */
+            .groupPopuler {
+                @apply flex flex-col gap-7 w-full;
+            }
+            .groupPopulerHead {
+                @apply flex gap-4 items-center;
+            }
+                .groupPopulerHeadIcons {
+                    @apply bg-semantic_information1 p-2 text-neutral_white rounded-full;
+                }
+                .groupPopulerHeadTitle {
+                    @apply md:text-2xl sm:text-base text-sm font-bold leading-8;
+                }
+            .groupPopulerBody {
+                @apply p-6 bg-neutral_white rounded-2xl border-b-4 border-semantic_information1 flex flex-col gap-4;
+            }
+                .groupCard {
+                    @apply flex flex-col gap-4 w-full;
+                }
+                .groupCardHead {
+                    @apply flex gap-4 items-center;
+                }
+                .groupCardHeadNameMember {
+                    @apply flex flex-col gap-2;
+                }
+                .groupCardHeadName {
+                    @apply text-base font-medium leading-6;
+                }
+                .groupCardHeadMember {
+                    @apply text-sm font-normal leading-5 text-neutral_gray1;
+                }
+                .groupCardBody {
+                    @apply py-2 px-[14px] bg-[#F8F8F8] text-neutral_black2 text-sm font-normal leading-5 rounded-2xl hover:scale-105 duration-300;
+                }
+    /* Page 2 End */
 
     /* Footer Class */
     .footer {
