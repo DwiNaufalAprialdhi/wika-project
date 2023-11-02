@@ -399,7 +399,7 @@
         @apply grid grid-cols-12 justify-center items-center gap-6 w-full;
     }
         .swiper {
-            @apply col-span-12 xl:max-w-7xl lg:max-w-6xl md:max-w-2xl sm:max-w-xs max-w-[300px] block rounded-2xl self-center;
+            @apply col-span-12 xl:max-w-7xl lg:max-w-6xl md:max-w-2xl sm:max-w-xs max-w-[300px] block self-center;
         }
         .swiper-wrapper {
             @apply flex items-center lg:gap-4 md:gap-3 gap-2;
@@ -554,6 +554,15 @@
             /* KM TV Class */
             .kmtv {
                 @apply w-full flex flex-col gap-6;
+            }
+            .kmtvIconsTitle {
+                @apply flex items-center gap-4;
+            }
+            .kmtvIcons {
+                @apply text-white p-2 rounded-full bg-semantic_warning1;
+            }
+            .kmtvTitle {
+                @apply md:text-2xl sm:text-base text-sm font-bold leading-8;
             }
             .kmtvHead {
                 @apply p-6 bg-neutral_white rounded-2xl border-b-4 border-accet1 relative flex lg:flex-row md:flex-col sm:flex-col flex-col gap-6 items-center;

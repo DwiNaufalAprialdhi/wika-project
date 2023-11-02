@@ -2550,7 +2550,6 @@ nav{
   display: block;
   max-width: 300px;
   align-self: center;
-  border-radius: 1rem;
 }
 
 @media (min-width: 640px){
@@ -3241,6 +3240,41 @@ nav{
   width: 100%;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.kmtvIconsTitle{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.kmtvIcons{
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 167 34 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.kmtvTitle{
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+@media (min-width: 640px){
+  .kmtvTitle{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 768px){
+  .kmtvTitle{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .kmtvHead{
@@ -5230,6 +5264,10 @@ nav{
   height: 1rem;
 }
 
+.h-40{
+  height: 10rem;
+}
+
 .h-6{
   height: 1.5rem;
 }
@@ -6320,6 +6358,11 @@ nav{
 .bg-semantic_success3{
   --tw-bg-opacity: 1;
   background-color: rgb(213 242 234 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-white{
