@@ -2545,6 +2545,56 @@ nav{
   gap: 1.5rem;
 }
 
+.swiper{
+  grid-column: span 12 / span 12;
+  display: block;
+  max-width: 300px;
+  align-self: center;
+  border-radius: 1rem;
+}
+
+@media (min-width: 640px){
+  .swiper{
+    max-width: 20rem;
+  }
+}
+
+@media (min-width: 768px){
+  .swiper{
+    max-width: 42rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .swiper{
+    max-width: 72rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .swiper{
+    max-width: 80rem;
+  }
+}
+
+.swiper-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px){
+  .swiper-wrapper{
+    gap: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .swiper-wrapper{
+    gap: 1rem;
+  }
+}
+
 .hotTopicCard{
   position: relative;
   grid-column: span 12 / span 12;
@@ -2554,13 +2604,6 @@ nav{
   border-radius: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  transition-duration: 300ms;
-}
-
-.hotTopicCard:hover{
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 640px){
@@ -2606,12 +2649,24 @@ nav{
 }
 
 .hotTopicCardBodyTitle{
-  max-width: 247px;
+  max-width: 230px;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .hotTopicCardBodyTitle{
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1024px){
+  .hotTopicCardBodyTitle{
+    max-width: 247px;
+  }
 }
 
 .hotTopicCardBodyAvatar{

@@ -14,7 +14,6 @@
         @apply fixed py-4 xl:px-[108px] lg:px-14 md:px-12 sm:px-4 px-4 mx-auto w-full bg-neutral_white z-30;
     }
 }
-
 @layer components {
 
     /* Navbar Class */
@@ -397,10 +396,16 @@
             @apply py-2 px-[14px] bg-accet3 text-accet1 rounded-full md:text-sm sm:text-xs text-[10px] font-bold leading-5 hover:scale-105 duration-300;
         }
     .hotTopicBody {
-        @apply grid grid-cols-12  justify-center items-center gap-6 w-full;
+        @apply grid grid-cols-12 justify-center items-center gap-6 w-full;
     }
+        .swiper {
+            @apply col-span-12 xl:max-w-7xl lg:max-w-6xl md:max-w-2xl sm:max-w-xs max-w-[300px] block rounded-2xl self-center;
+        }
+        .swiper-wrapper {
+            @apply flex items-center lg:gap-4 md:gap-3 gap-2;
+        }
         .hotTopicCard {
-            @apply rounded-2xl overflow-hidden relative w-full bg-black lg:col-span-3 md:col-span-6 sm:col-span-12 col-span-12 cursor-pointer hover:scale-105 duration-300;
+            @apply rounded-2xl overflow-hidden relative w-full bg-black lg:col-span-3 md:col-span-6 sm:col-span-12 col-span-12 cursor-pointer;
         }
         .hotTopicCardImg {
             @apply object-cover w-full h-auto scale-105 brightness-50 shadow-inner;
@@ -409,7 +414,7 @@
             @apply flex flex-col gap-2 absolute bottom-4 left-4;
         }
         .hotTopicCardBodyTitle {
-            @apply max-w-[247px] text-base font-bold leading-6 text-neutral_white;
+            @apply lg:max-w-[247px] md:max-w-[200px] max-w-[230px] text-base font-bold leading-6 text-neutral_white;
         }
         .hotTopicCardBodyAvatar {
             @apply flex gap-2 items-center;
@@ -961,4 +966,6 @@
         .copyrightTitle {
             @apply text-sm font-normal leading-5 text-neutral_black2;
         }
+    
+        
 }   
