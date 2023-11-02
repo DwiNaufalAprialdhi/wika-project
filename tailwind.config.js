@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}",
-            "./**/*.{html,js}"],
+            "./**/*.{html,js}",
+            "./node_modules/flowbite/**/*.js"],
   theme: {
     fontFamily: {
       'helvetica': ['Helvetica Neue', 'sans-serif']
@@ -47,5 +48,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
