@@ -497,7 +497,10 @@
 
             /* Pertanyaan Class */
             .question {
-                @apply w-full mb-[52px] flex flex-col gap-7;
+                @apply w-full mb-[102px] flex flex-col gap-7;
+            }
+            .seeAllQuestion {
+                @apply  self-center place-content-start max-w-max w-full bg-accet3 text-accet1 py-2 px-6 rounded-full text-sm font-bold leading-5 hover:scale-105 duration-300 place-self-center;
             }
             .questionHead {
                 @apply flex gap-4 items-center;
@@ -509,7 +512,7 @@
                     @apply md:text-2xl sm:text-base text-sm font-bold leading-8;
                 }
             .questionBody {
-                @apply grid grid-cols-8 gap-6 w-full relative;
+                @apply grid grid-cols-8 gap-6 w-full items-center relative pb-28 pt-10;
             }
                 .questionCard {
                     @apply lg:col-span-4 md:col-span-8 sm:col-span-12 col-span-12 p-6 bg-neutral_white rounded-2xl border-b-4 border-[#8F76EC] flex flex-col gap-6;
@@ -527,7 +530,7 @@
                     @apply text-xs font-normal leading-4 text-neutral_gray1;
                 }
                 .questionCardBody {
-                    @apply flex flex-col gap-2;
+                    @apply flex flex-col gap-2 mt-6;
                 }
                 .questionCardBodyTitle {
                     @apply text-accet1 text-sm font-medium leading-5;
@@ -556,7 +559,7 @@
                 @apply w-full flex flex-col gap-6;
             }
             .kmtvIconsTitle {
-                @apply flex items-center gap-4;
+                @apply flex items-center gap-4 mb-10;
             }
             .kmtvIcons {
                 @apply text-white p-2 rounded-full bg-semantic_warning1;
@@ -604,13 +607,13 @@
                     @apply lg:block md:hidden hidden w-[310px] h-auto object-cover absolute right-0 bottom-0;
                 }
             .kmtvFooter {
-                @apply grid grid-cols-8 gap-6 w-full relative;
+                @apply grid grid-cols-8 gap-6 w-full relative pt-10 pb-20;
             }
                 .kmtvCard {
                     @apply bg-neutral_white rounded-2xl p-6 border-secondary1 border-b-4 lg:col-span-4 md:col-span-8 sm:col-span-8 col-span-8 flex flex-col gap-8;
                 }
                 .kmtvCardHead {
-                    @apply flex items-center justify-between;
+                    @apply flex items-center justify-between pb-10;
                 }
                     .kmtvCardHeadLeft {
                         @apply flex items-center gap-5

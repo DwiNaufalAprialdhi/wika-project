@@ -3014,7 +3014,7 @@ nav{
 /* Pertanyaan Class */
 
 .question{
-  margin-bottom: 52px;
+  margin-bottom: 102px;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -3061,7 +3061,10 @@ nav{
   display: grid;
   width: 100%;
   grid-template-columns: repeat(8, minmax(0, 1fr));
+  align-items: center;
   gap: 1.5rem;
+  padding-bottom: 7rem;
+  padding-top: 2.5rem;
 }
 
 .questionCard{
@@ -3125,6 +3128,7 @@ nav{
 }
 
 .questionCardBody{
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -3243,6 +3247,7 @@ nav{
 }
 
 .kmtvIconsTitle{
+  margin-bottom: 2.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -3461,6 +3466,8 @@ nav{
   width: 100%;
   grid-template-columns: repeat(8, minmax(0, 1fr));
   gap: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
 }
 
 .kmtvCard{
@@ -3499,6 +3506,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 2.5rem;
 }
 
 .kmtvCardHeadLeft{
@@ -5264,10 +5272,6 @@ nav{
   height: 1rem;
 }
 
-.h-40{
-  height: 10rem;
-}
-
 .h-6{
   height: 1.5rem;
 }
@@ -6358,11 +6362,6 @@ nav{
 .bg-semantic_success3{
   --tw-bg-opacity: 1;
   background-color: rgb(213 242 234 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-white{
