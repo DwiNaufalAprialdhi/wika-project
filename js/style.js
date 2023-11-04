@@ -1,5 +1,14 @@
 const overlay = document.querySelector('.overlay')
 const dropdownMenu = document.querySelector('.dropdownMenu')
+const navLink = document.querySelectorAll('.nav_link')
+
+// Nav Link Active
+navLink.forEach(navLink => {
+  navLink.addEventListener('click', () => {
+      document.querySelector('.nav_active')?.classList.remove('nav_active');
+      navLink.classList.add('nav_active');
+  });
+});
 
 // Toggle Menu Overlay Mobile
 function navToggle() {
